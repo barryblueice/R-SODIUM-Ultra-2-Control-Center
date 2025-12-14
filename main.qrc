@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>res/close.svg</file>
+    <file>res/minimize.svg</file>
+  </qresource>
+</RCC>
