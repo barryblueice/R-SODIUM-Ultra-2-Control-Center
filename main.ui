@@ -67,12 +67,15 @@
     border: none;
     border-radius: 0px;
 }
+
 QPushButton:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: argb(255, 255, 255, 0);
 }
+
 QPushButton:pressed {
-    background-color: rgb(220, 220, 220);
-}</string>
+    background-color: argb(220, 220, 220, 0);
+}
+</string>
      </property>
      <property name="text">
       <string/>
@@ -103,21 +106,22 @@ QPushButton:pressed {
        <height>40</height>
       </rect>
      </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton {
-    background-color: transparent;
-    border: none;
-    border-radius: 0px;
-}
-QPushButton:hover {
-    background-color: rgb(255, 255, 255);
-}
-QPushButton:pressed {
-    background-color: rgb(220, 220, 220);
-}</string>
+      <string notr="true">background-color: transparent;
+border: none;
+border-radius: 0px;</string>
      </property>
      <property name="text">
       <string/>
@@ -139,6 +143,9 @@ QPushButton:pressed {
       <bool>false</bool>
      </property>
      <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
       <bool>false</bool>
      </property>
      <property name="flat">
