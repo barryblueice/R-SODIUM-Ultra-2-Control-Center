@@ -323,7 +323,7 @@ QPushButton:pressed {
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="centersettingbuttion">
+    <widget class="QPushButton" name="centersettingbutton">
      <property name="geometry">
       <rect>
        <x>20</x>
