@@ -709,14 +709,14 @@ QScrollArea QScrollBar::sub-page:vertical {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>523</width>
-        <height>900</height>
+        <width>531</width>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>900</height>
+        <height>481</height>
        </size>
       </property>
       <property name="styleSheet">
@@ -1062,12 +1062,22 @@ HDDPC signal</string>
          <rect>
           <x>40</x>
           <y>110</y>
-          <width>141</width>
+          <width>151</width>
           <height>31</height>
          </rect>
         </property>
         <property name="toolTip">
          <string>Choose PD Mode for PD charging port</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    padding: 4px 10px;
+}
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    padding: 2px 8px;
+    selection-background-color: #D0D0D0;
+}</string>
         </property>
         <property name="currentIndex">
          <number>0</number>

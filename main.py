@@ -57,6 +57,9 @@ class MainDialog(QDialog):
         self.setWindowOpacity(0.0)
         self.show()
         self.fade_in()
+        
+        self._drag_active = False
+        self._drag_position = None
 
         self.ui.close.clicked.connect(self.fade_out_close)
         self.ui.minimize.clicked.connect(self.minimize_window)
@@ -102,6 +105,21 @@ class MainDialog(QDialog):
         qw: QWidget
         for qw in self.qwidget_list:
             qw.setVisible(qw == target_widget)
+            
+    def mousePressEvent(self, event):
+        if event.button() == Qt.LeftButton and self.ui.topbar.underMouse():
+            self._drag_active = True
+            self._drag_position = event.globalPosition().toPoint() - self.frameGeometry().topLeft()
+            event.accept()
+                
+    def mouseMoveEvent(self, event):
+        if self._drag_active and event.buttons() & Qt.LeftButton:
+            self.move(event.globalPosition().toPoint() - self._drag_position)
+            event.accept()
+
+    def mouseReleaseEvent(self, event):
+        self._drag_active = False
+        event.accept()
 
 
 if __name__ == "__main__":

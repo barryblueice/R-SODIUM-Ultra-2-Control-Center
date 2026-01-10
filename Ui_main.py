@@ -260,8 +260,8 @@ class Ui_Dialog(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 523, 900))
-        self.scrollAreaWidgetContents.setMinimumSize(QSize(0, 900))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 531, 481))
+        self.scrollAreaWidgetContents.setMinimumSize(QSize(0, 481))
         self.scrollAreaWidgetContents.setStyleSheet(u"QScrollArea QWidget {\n"
 "    background: transparent;\n"
 "}")
@@ -382,7 +382,15 @@ class Ui_Dialog(object):
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.setObjectName(u"comboBox")
-        self.comboBox.setGeometry(QRect(40, 110, 141, 31))
+        self.comboBox.setGeometry(QRect(40, 110, 151, 31))
+        self.comboBox.setStyleSheet(u"QComboBox {\n"
+"    padding: 4px 10px;\n"
+"}\n"
+"QComboBox QAbstractItemView {\n"
+"    background-color: #FFFFFF;\n"
+"    padding: 2px 8px;\n"
+"    selection-background-color: #D0D0D0;\n"
+"}")
         self.label_2 = QLabel(self.groupBox_3)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setGeometry(QRect(40, 90, 131, 16))
