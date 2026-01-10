@@ -15,8 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QDialog, QFrame, QLabel,
-    QPushButton, QScrollArea, QSizePolicy, QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDialog,
+    QFrame, QGroupBox, QLabel, QPushButton,
+    QScrollArea, QSizePolicy, QWidget)
 import main_rc
 
 class Ui_Dialog(object):
@@ -226,6 +227,9 @@ class Ui_Dialog(object):
         self.scrollArea = QScrollArea(self.enclosure_setting_interface)
         self.scrollArea.setObjectName(u"scrollArea")
         self.scrollArea.setGeometry(QRect(-1, 10, 531, 481))
+        font3 = QFont()
+        font3.setFamilies([u"Segoe UI"])
+        self.scrollArea.setFont(font3)
         self.scrollArea.setAutoFillBackground(True)
         self.scrollArea.setStyleSheet(u"QScrollArea QScrollBar:vertical {\n"
 "    background: transparent;\n"
@@ -267,6 +271,127 @@ class Ui_Dialog(object):
         self.label_12.setFont(font1)
         self.label_12.setStyleSheet(u"background-color: transparent;")
         self.label_12.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
+        self.groupBox = QGroupBox(self.scrollAreaWidgetContents)
+        self.groupBox.setObjectName(u"groupBox")
+        self.groupBox.setGeometry(QRect(20, 70, 231, 401))
+        font4 = QFont()
+        font4.setFamilies([u"Segoe UI"])
+        font4.setPointSize(10)
+        self.groupBox.setFont(font4)
+        self.groupBox.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.groupBox_4 = QGroupBox(self.groupBox)
+        self.groupBox_4.setObjectName(u"groupBox_4")
+        self.groupBox_4.setGeometry(QRect(30, 39, 171, 161))
+        self.checkBox_2 = QCheckBox(self.groupBox_4)
+        self.checkBox_2.setObjectName(u"checkBox_2")
+        self.checkBox_2.setGeometry(QRect(30, 80, 121, 19))
+        self.checkBox_2.setAutoExclusive(False)
+        self.checkBox_3 = QCheckBox(self.groupBox_4)
+        self.checkBox_3.setObjectName(u"checkBox_3")
+        self.checkBox_3.setGeometry(QRect(30, 110, 121, 19))
+        self.checkBox_3.setAutoExclusive(False)
+        self.checkBox = QCheckBox(self.groupBox_4)
+        self.checkBox.setObjectName(u"checkBox")
+        self.checkBox.setGeometry(QRect(30, 50, 83, 19))
+        self.checkBox.setAutoExclusive(False)
+        self.groupBox_5 = QGroupBox(self.groupBox)
+        self.groupBox_5.setObjectName(u"groupBox_5")
+        self.groupBox_5.setGeometry(QRect(30, 220, 171, 161))
+        self.checkBox_9 = QCheckBox(self.groupBox_5)
+        self.checkBox_9.setObjectName(u"checkBox_9")
+        self.checkBox_9.setGeometry(QRect(30, 80, 121, 19))
+        self.checkBox_9.setAutoExclusive(False)
+        self.checkBox_10 = QCheckBox(self.groupBox_5)
+        self.checkBox_10.setObjectName(u"checkBox_10")
+        self.checkBox_10.setGeometry(QRect(30, 110, 121, 19))
+        self.checkBox_10.setAutoExclusive(False)
+        self.checkBox_11 = QCheckBox(self.groupBox_5)
+        self.checkBox_11.setObjectName(u"checkBox_11")
+        self.checkBox_11.setGeometry(QRect(30, 50, 83, 19))
+        self.checkBox_11.setAutoExclusive(False)
+        self.groupBox_2 = QGroupBox(self.scrollAreaWidgetContents)
+        self.groupBox_2.setObjectName(u"groupBox_2")
+        self.groupBox_2.setGeometry(QRect(270, 70, 231, 171))
+        self.groupBox_2.setFont(font4)
+        self.groupBox_2.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.checkBox_6 = QCheckBox(self.groupBox_2)
+        self.checkBox_6.setObjectName(u"checkBox_6")
+        self.checkBox_6.setGeometry(QRect(50, 40, 141, 19))
+        self.checkBox_6.setAutoExclusive(True)
+        self.checkBox_4 = QCheckBox(self.groupBox_2)
+        self.checkBox_4.setObjectName(u"checkBox_4")
+        self.checkBox_4.setGeometry(QRect(50, 70, 121, 19))
+        self.checkBox_4.setAutoExclusive(True)
+        self.checkBox_5 = QCheckBox(self.groupBox_2)
+        self.checkBox_5.setObjectName(u"checkBox_5")
+        self.checkBox_5.setGeometry(QRect(50, 100, 121, 19))
+        self.checkBox_5.setAutoExclusive(True)
+        self.checkBox_7 = QCheckBox(self.groupBox_2)
+        self.checkBox_7.setObjectName(u"checkBox_7")
+        self.checkBox_7.setGeometry(QRect(50, 130, 121, 19))
+        self.checkBox_7.setAutoExclusive(True)
+        self.groupBox_3 = QGroupBox(self.scrollAreaWidgetContents)
+        self.groupBox_3.setObjectName(u"groupBox_3")
+        self.groupBox_3.setGeometry(QRect(270, 250, 231, 161))
+        self.groupBox_3.setFont(font4)
+        self.groupBox_3.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.checkBox_8 = QCheckBox(self.groupBox_3)
+        self.checkBox_8.setObjectName(u"checkBox_8")
+        self.checkBox_8.setGeometry(QRect(40, 40, 151, 31))
+        self.checkBox_8.setAutoExclusive(True)
+        self.comboBox = QComboBox(self.groupBox_3)
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setGeometry(QRect(40, 110, 141, 31))
+        self.label_2 = QLabel(self.groupBox_3)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(40, 90, 131, 16))
+        self.pushButton_2 = QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setGeometry(QRect(270, 430, 111, 41))
+        self.pushButton = QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(390, 430, 111, 41))
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.overview_interface = QWidget(self.mainFrame)
         self.overview_interface.setObjectName(u"overview_interface")
@@ -456,12 +581,15 @@ class Ui_Dialog(object):
         self.topbar.raise_()
         self.center_setting_interface.raise_()
         self.controller_setting_interface.raise_()
-        self.enclosure_setting_interface.raise_()
         self.oled_setting_interface.raise_()
         self.overview_interface.raise_()
         self.about_interface.raise_()
+        self.enclosure_setting_interface.raise_()
 
         self.retranslateUi(Dialog)
+
+        self.comboBox.setCurrentIndex(0)
+
 
         QMetaObject.connectSlotsByName(Dialog)
     # setupUi
@@ -543,6 +671,32 @@ class Ui_Dialog(object):
         self.label_7.setText(QCoreApplication.translate("Dialog", u"<html><head/><body><p>Hope you enjoy my work! :)</p></body></html>", None))
         self.label_8.setText("")
         self.label_12.setText(QCoreApplication.translate("Dialog", u"Enclosure Setting", None))
+        self.groupBox.setTitle(QCoreApplication.translate("Dialog", u"DISK On-Power Config:", None))
+        self.groupBox_4.setTitle(QCoreApplication.translate("Dialog", u"Self-Powered:", None))
+        self.checkBox_2.setText(QCoreApplication.translate("Dialog", u"SATA1 (NGFF)", None))
+        self.checkBox_3.setText(QCoreApplication.translate("Dialog", u"SATA2 (2.5)", None))
+        self.checkBox.setText(QCoreApplication.translate("Dialog", u"NVMe", None))
+        self.groupBox_5.setTitle(QCoreApplication.translate("Dialog", u"Ext-Powered:", None))
+        self.checkBox_9.setText(QCoreApplication.translate("Dialog", u"SATA1 (NGFF)", None))
+        self.checkBox_10.setText(QCoreApplication.translate("Dialog", u"SATA2 (2.5)", None))
+        self.checkBox_11.setText(QCoreApplication.translate("Dialog", u"NVMe", None))
+        self.groupBox_2.setTitle(QCoreApplication.translate("Dialog", u"ASM1352R Config:", None))
+        self.checkBox_6.setText(QCoreApplication.translate("Dialog", u"SATA-PM (Default)", None))
+        self.checkBox_4.setText(QCoreApplication.translate("Dialog", u"JBOD (Span)", None))
+        self.checkBox_5.setText(QCoreApplication.translate("Dialog", u"RAID 1", None))
+        self.checkBox_7.setText(QCoreApplication.translate("Dialog", u"RAID 0", None))
+        self.groupBox_3.setTitle(QCoreApplication.translate("Dialog", u"Other Config:", None))
+        self.checkBox_8.setText(QCoreApplication.translate("Dialog", u"Enable suspend by\n"
+"HDDPC signal", None))
+        self.comboBox.setItemText(0, QCoreApplication.translate("Dialog", u"Force PD Mode", None))
+        self.comboBox.setItemText(1, QCoreApplication.translate("Dialog", u"Adaptive PD Mode", None))
+
+#if QT_CONFIG(tooltip)
+        self.comboBox.setToolTip(QCoreApplication.translate("Dialog", u"Choose PD Mode for PD charging port", None))
+#endif // QT_CONFIG(tooltip)
+        self.label_2.setText(QCoreApplication.translate("Dialog", u"PD Mode Control:", None))
+        self.pushButton_2.setText(QCoreApplication.translate("Dialog", u"Apply", None))
+        self.pushButton.setText(QCoreApplication.translate("Dialog", u"Cancel", None))
         self.label_9.setText(QCoreApplication.translate("Dialog", u"Overview", None))
         self.label_11.setText(QCoreApplication.translate("Dialog", u"Controller Setting", None))
         self.label_13.setText(QCoreApplication.translate("Dialog", u"OLED Display Setting", None))

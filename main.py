@@ -5,7 +5,7 @@ from Ui_main import Ui_Dialog
 
 import interface_controller
 
-class MyDialog(QDialog):
+class MainDialog(QDialog):
     def __init__(self):
         super().__init__()
         self.ui = Ui_Dialog()
@@ -106,6 +106,6 @@ class MyDialog(QDialog):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    dlg = MyDialog()
+    dlg = MainDialog()
     dlg.show()
     sys.exit(app.exec())
