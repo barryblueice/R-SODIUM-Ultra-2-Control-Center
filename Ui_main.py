@@ -160,52 +160,43 @@ class Ui_Dialog(object):
         self.about_interface = QWidget(self.mainFrame)
         self.about_interface.setObjectName(u"about_interface")
         self.about_interface.setGeometry(QRect(99, 40, 541, 501))
-        self.label = QLabel(self.about_interface)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(30, 20, 511, 51))
-        font1 = QFont()
-        font1.setFamilies([u"Segoe UI"])
-        font1.setPointSize(18)
-        font1.setBold(False)
-        self.label.setFont(font1)
-        self.label.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
         self.label_3 = QLabel(self.about_interface)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(50, 150, 441, 61))
-        font2 = QFont()
-        font2.setFamilies([u"Segoe UI"])
-        font2.setPointSize(11)
-        font2.setBold(False)
-        self.label_3.setFont(font2)
+        self.label_3.setGeometry(QRect(50, 130, 441, 61))
+        font1 = QFont()
+        font1.setFamilies([u"Segoe UI"])
+        font1.setPointSize(11)
+        font1.setBold(False)
+        self.label_3.setFont(font1)
         self.label_3.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_3.setOpenExternalLinks(True)
         self.label_4 = QLabel(self.about_interface)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(0, 210, 541, 61))
-        self.label_4.setFont(font2)
+        self.label_4.setGeometry(QRect(0, 200, 541, 51))
+        self.label_4.setFont(font1)
         self.label_4.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_4.setOpenExternalLinks(True)
         self.label_5 = QLabel(self.about_interface)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(0, 280, 541, 61))
-        self.label_5.setFont(font2)
+        self.label_5.setGeometry(QRect(0, 260, 541, 61))
+        self.label_5.setFont(font1)
         self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_5.setOpenExternalLinks(True)
         self.label_6 = QLabel(self.about_interface)
         self.label_6.setObjectName(u"label_6")
         self.label_6.setGeometry(QRect(0, 330, 541, 91))
-        self.label_6.setFont(font2)
+        self.label_6.setFont(font1)
         self.label_6.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_6.setOpenExternalLinks(True)
         self.label_7 = QLabel(self.about_interface)
         self.label_7.setObjectName(u"label_7")
         self.label_7.setGeometry(QRect(0, 430, 541, 51))
-        self.label_7.setFont(font2)
+        self.label_7.setFont(font1)
         self.label_7.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_7.setOpenExternalLinks(True)
         self.label_8 = QLabel(self.about_interface)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(40, 70, 427, 80))
+        self.label_8.setGeometry(QRect(50, 40, 427, 80))
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -214,22 +205,15 @@ class Ui_Dialog(object):
         self.label_8.setPixmap(QPixmap(u":/pic/res/TITLE.png"))
         self.label_8.setScaledContents(True)
         self.label_8.setWordWrap(False)
-        self.label_3.raise_()
-        self.label_4.raise_()
-        self.label_5.raise_()
-        self.label_6.raise_()
-        self.label_7.raise_()
-        self.label_8.raise_()
-        self.label.raise_()
         self.enclosure_setting_interface = QWidget(self.mainFrame)
         self.enclosure_setting_interface.setObjectName(u"enclosure_setting_interface")
         self.enclosure_setting_interface.setGeometry(QRect(99, 40, 541, 501))
         self.scrollArea = QScrollArea(self.enclosure_setting_interface)
         self.scrollArea.setObjectName(u"scrollArea")
         self.scrollArea.setGeometry(QRect(-1, 10, 531, 481))
-        font3 = QFont()
-        font3.setFamilies([u"Segoe UI"])
-        self.scrollArea.setFont(font3)
+        font2 = QFont()
+        font2.setFamilies([u"Segoe UI"])
+        self.scrollArea.setFont(font2)
         self.scrollArea.setAutoFillBackground(True)
         self.scrollArea.setStyleSheet(u"QScrollArea QScrollBar:vertical {\n"
 "    background: transparent;\n"
@@ -268,7 +252,11 @@ class Ui_Dialog(object):
         self.label_12 = QLabel(self.scrollAreaWidgetContents)
         self.label_12.setObjectName(u"label_12")
         self.label_12.setGeometry(QRect(30, 10, 491, 51))
-        self.label_12.setFont(font1)
+        font3 = QFont()
+        font3.setFamilies([u"Segoe UI"])
+        font3.setPointSize(18)
+        font3.setBold(False)
+        self.label_12.setFont(font3)
         self.label_12.setStyleSheet(u"background-color: transparent;")
         self.label_12.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
         self.groupBox = QGroupBox(self.scrollAreaWidgetContents)
@@ -343,6 +331,7 @@ class Ui_Dialog(object):
         self.checkBox_6 = QCheckBox(self.groupBox_2)
         self.checkBox_6.setObjectName(u"checkBox_6")
         self.checkBox_6.setGeometry(QRect(50, 40, 141, 19))
+        self.checkBox_6.setChecked(True)
         self.checkBox_6.setAutoExclusive(True)
         self.checkBox_4 = QCheckBox(self.groupBox_2)
         self.checkBox_4.setObjectName(u"checkBox_4")
@@ -442,7 +431,7 @@ class Ui_Dialog(object):
         self.label_9 = QLabel(self.scrollAreaWidgetContents1)
         self.label_9.setObjectName(u"label_9")
         self.label_9.setGeometry(QRect(30, 10, 491, 51))
-        self.label_9.setFont(font1)
+        self.label_9.setFont(font3)
         self.label_9.setStyleSheet(u"background-color: transparent;")
         self.label_9.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
         self.overview_detail = QWidget(self.scrollAreaWidgetContents1)
@@ -491,7 +480,7 @@ class Ui_Dialog(object):
         self.label_11 = QLabel(self.scrollAreaWidgetContents2)
         self.label_11.setObjectName(u"label_11")
         self.label_11.setGeometry(QRect(30, 10, 491, 51))
-        self.label_11.setFont(font1)
+        self.label_11.setFont(font3)
         self.label_11.setStyleSheet(u"background-color: transparent;")
         self.label_11.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
         self.scrollArea1.setWidget(self.scrollAreaWidgetContents2)
@@ -536,7 +525,7 @@ class Ui_Dialog(object):
         self.label_13 = QLabel(self.scrollAreaWidgetContents3)
         self.label_13.setObjectName(u"label_13")
         self.label_13.setGeometry(QRect(30, 10, 491, 51))
-        self.label_13.setFont(font1)
+        self.label_13.setFont(font3)
         self.label_13.setStyleSheet(u"background-color: transparent;")
         self.label_13.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
         self.scrollArea2.setWidget(self.scrollAreaWidgetContents3)
@@ -581,7 +570,7 @@ class Ui_Dialog(object):
         self.label_10 = QLabel(self.scrollAreaWidgetContents4)
         self.label_10.setObjectName(u"label_10")
         self.label_10.setGeometry(QRect(30, 10, 491, 51))
-        self.label_10.setFont(font1)
+        self.label_10.setFont(font3)
         self.label_10.setStyleSheet(u"background-color: transparent;")
         self.label_10.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
         self.scrollArea3.setWidget(self.scrollAreaWidgetContents4)
@@ -591,8 +580,8 @@ class Ui_Dialog(object):
         self.controller_setting_interface.raise_()
         self.oled_setting_interface.raise_()
         self.overview_interface.raise_()
-        self.about_interface.raise_()
         self.enclosure_setting_interface.raise_()
+        self.about_interface.raise_()
 
         self.retranslateUi(Dialog)
 
@@ -638,43 +627,10 @@ class Ui_Dialog(object):
         self.aboutbutton.setToolTip(QCoreApplication.translate("Dialog", u"About", None))
 #endif // QT_CONFIG(tooltip)
         self.aboutbutton.setText("")
-        self.label.setText(QCoreApplication.translate("Dialog", u"About", None))
         self.label_3.setText(QCoreApplication.translate("Dialog", u"<html><head/><body><p>This software is opensourced on GitHub:</p><p><a href=\"https://github.com/barryblueice/R-SODIUM-Ultra-2-Control-Center\"><span style=\" text-decoration: underline; color:#003e92;\">barryblueice - R-SODIUM-Ultra-2-Control-Center</span></a></p></body></html>", None))
         self.label_4.setText(QCoreApplication.translate("Dialog", u"<html><head/><body><p>Additionally, related firmware is also opensourced on GitHub:</p><p><a href=\"https://github.com/barryblueice/R-SODIUM-Ultra-2-Enclosure-Docker-Station-Firmware\"><span style=\" text-decoration: underline; color:#003e92;\">barryblueice - R-SODIUM-Ultra-2-Station-Firmware</span></a></p></body></html>", None))
-        self.label_5.setText(QCoreApplication.translate("Dialog", u"<html><head/><body><p>Hardware is opensourced on OSHWHUB:</p><p><br/></p></body></html><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-"<ui version=\"4.0\">\n"
-" <widget name=\"__qt_fake_top_level\">\n"
-"  <widget class=\"QLabel\" name=\"label_4\">\n"
-"   <property name=\"geometry\">\n"
-"    <rect>\n"
-"     <x>0</x>\n"
-"     <y>180</y>\n"
-"     <width>541</width>\n"
-"     <height>61</height>\n"
-"    </rect>\n"
-"   </property>\n"
-"   <property name=\"font\">\n"
-"    <font>\n"
-"     <family>Segoe UI</family>\n"
-"     <pointsize>12</pointsize>\n"
-"     <bold>false</bold>\n"
-"    </font>\n"
-"   </property>\n"
-"   <property name=\"text\">\n"
-"    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Additionally, related firmware is also opensourced on GitHub:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/barryblueice/R-SODIUM-Ultra-2-Enclosure-Docker-Station-Firmware&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#003e92;&quot;&gt;barryblueice - R-SODIUM-Ultra-2-Station-Firmware&lt;/span&gt"
-                        ";&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>\n"
-"   </property>\n"
-"   <property name=\"alignment\">\n"
-"    <set>Qt::AlignmentFlag::AlignCenter</set>\n"
-"   </property>\n"
-"   <property name=\"openExternalLinks\">\n"
-"    <bool>true</bool>\n"
-"   </property>\n"
-"  </widget>\n"
-" </widget>\n"
-" <resources/>\n"
-"</ui>\n"
-"", None))
+        self.label_5.setText(QCoreApplication.translate("Dialog", u"\n"
+"<html><head/><body><p>Hardware is opensourced on OSHWHUB:</p><p><a href=\"https://oshwhub.com/barryblueice/usb3-ultra-2-docker-station\"><span style=\" text-decoration: underline; color:#003e92;\">https://oshwhub.com/barryblueice/usb3-ultra-2-docker-station</span></a></p></body></html>", None))
         self.label_6.setText(QCoreApplication.translate("Dialog", u"<html><head/><body><p>This software is opensource under <a href=\"https://www.mozilla.org/en-US/MPL/2.0/\"><span style=\" text-decoration: underline; color:#003e92;\">Mozilla Public License Version 2.0</span></a><a href=\"https://www.mozilla.org/en-US/MPL/2.0/\"><span style=\" color:#003e92;\">.</span></a></p><p>Additionally, hardware is opensource under</p><p><a href=\"https://gitlab.com/ohwr/project/cernohl/-/wikis/uploads/819d71bea3458f71fba6cf4fb0f2de6b/cern_ohl_s_v2.txt\"><span style=\" text-decoration: underline; color:#003e92;\">CERN License - Strongly Reciprocal</span></a><a href=\"https://gitlab.com/ohwr/project/cernohl/-/wikis/uploads/819d71bea3458f71fba6cf4fb0f2de6b/cern_ohl_s_v2.txt\"><span style=\" color:#003e92;\">.</span></a><br/></p></body></html>", None))
         self.label_7.setText(QCoreApplication.translate("Dialog", u"<html><head/><body><p>Hope you enjoy my work! :)</p></body></html>", None))
         self.label_8.setText("")

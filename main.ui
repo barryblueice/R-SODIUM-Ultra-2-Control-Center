@@ -422,34 +422,11 @@ QPushButton:pressed {
       <height>501</height>
      </rect>
     </property>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>20</y>
-       <width>511</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Segoe UI</family>
-       <pointsize>18</pointsize>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>About</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>150</y>
+       <y>130</y>
        <width>441</width>
        <height>61</height>
       </rect>
@@ -475,9 +452,9 @@ QPushButton:pressed {
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>210</y>
+       <y>200</y>
        <width>541</width>
-       <height>61</height>
+       <height>51</height>
       </rect>
      </property>
      <property name="font">
@@ -501,7 +478,7 @@ QPushButton:pressed {
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>280</y>
+       <y>260</y>
        <width>541</width>
        <height>61</height>
       </rect>
@@ -514,39 +491,8 @@ QPushButton:pressed {
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hardware is opensourced on OSHWHUB:&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;ui version=&quot;4.0&quot;&gt;
- &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
-  &lt;widget class=&quot;QLabel&quot; name=&quot;label_4&quot;&gt;
-   &lt;property name=&quot;geometry&quot;&gt;
-    &lt;rect&gt;
-     &lt;x&gt;0&lt;/x&gt;
-     &lt;y&gt;180&lt;/y&gt;
-     &lt;width&gt;541&lt;/width&gt;
-     &lt;height&gt;61&lt;/height&gt;
-    &lt;/rect&gt;
-   &lt;/property&gt;
-   &lt;property name=&quot;font&quot;&gt;
-    &lt;font&gt;
-     &lt;family&gt;Segoe UI&lt;/family&gt;
-     &lt;pointsize&gt;12&lt;/pointsize&gt;
-     &lt;bold&gt;false&lt;/bold&gt;
-    &lt;/font&gt;
-   &lt;/property&gt;
-   &lt;property name=&quot;text&quot;&gt;
-    &lt;string&gt;&amp;lt;html&amp;gt;&amp;lt;head/&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;Additionally, related firmware is also opensourced on GitHub:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://github.com/barryblueice/R-SODIUM-Ultra-2-Enclosure-Docker-Station-Firmware&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot; text-decoration: underline; color:#003e92;&amp;quot;&amp;gt;barryblueice - R-SODIUM-Ultra-2-Station-Firmware&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/string&gt;
-   &lt;/property&gt;
-   &lt;property name=&quot;alignment&quot;&gt;
-    &lt;set&gt;Qt::AlignmentFlag::AlignCenter&lt;/set&gt;
-   &lt;/property&gt;
-   &lt;property name=&quot;openExternalLinks&quot;&gt;
-    &lt;bool&gt;true&lt;/bool&gt;
-   &lt;/property&gt;
-  &lt;/widget&gt;
- &lt;/widget&gt;
- &lt;resources/&gt;
-&lt;/ui&gt;
-</string>
+      <string>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hardware is opensourced on OSHWHUB:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://oshwhub.com/barryblueice/usb3-ultra-2-docker-station&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#003e92;&quot;&gt;https://oshwhub.com/barryblueice/usb3-ultra-2-docker-station&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -610,8 +556,8 @@ QPushButton:pressed {
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>70</y>
+       <x>50</x>
+       <y>40</y>
        <width>427</width>
        <height>80</height>
       </rect>
@@ -635,13 +581,6 @@ QPushButton:pressed {
       <bool>false</bool>
      </property>
     </widget>
-    <zorder>label_3</zorder>
-    <zorder>label_4</zorder>
-    <zorder>label_5</zorder>
-    <zorder>label_6</zorder>
-    <zorder>label_7</zorder>
-    <zorder>label_8</zorder>
-    <zorder>label</zorder>
    </widget>
    <widget class="QWidget" name="enclosure_setting_interface" native="true">
     <property name="geometry">
@@ -952,6 +891,9 @@ QGroupBox::title {
         </property>
         <property name="text">
          <string>SATA-PM (Default)</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
         </property>
         <property name="autoExclusive">
          <bool>true</bool>
@@ -1555,8 +1497,8 @@ QScrollArea QScrollBar::sub-page:vertical {
    <zorder>controller_setting_interface</zorder>
    <zorder>oled_setting_interface</zorder>
    <zorder>overview_interface</zorder>
-   <zorder>about_interface</zorder>
    <zorder>enclosure_setting_interface</zorder>
+   <zorder>about_interface</zorder>
   </widget>
  </widget>
  <resources>
