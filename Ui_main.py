@@ -483,6 +483,38 @@ class Ui_Dialog(object):
         self.label_11.setFont(font3)
         self.label_11.setStyleSheet(u"background-color: transparent;")
         self.label_11.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
+        self.groupBox_6 = QGroupBox(self.scrollAreaWidgetContents2)
+        self.groupBox_6.setObjectName(u"groupBox_6")
+        self.groupBox_6.setGeometry(QRect(160, 120, 171, 221))
+        self.groupBox_6.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.pushButton_5 = QPushButton(self.groupBox_6)
+        self.pushButton_5.setObjectName(u"pushButton_5")
+        self.pushButton_5.setGeometry(QRect(30, 40, 111, 41))
+        self.pushButton_6 = QPushButton(self.groupBox_6)
+        self.pushButton_6.setObjectName(u"pushButton_6")
+        self.pushButton_6.setGeometry(QRect(30, 100, 111, 41))
+        self.pushButton_9 = QPushButton(self.groupBox_6)
+        self.pushButton_9.setObjectName(u"pushButton_9")
+        self.pushButton_9.setGeometry(QRect(30, 160, 111, 41))
+        self.pushButton_3 = QPushButton(self.scrollAreaWidgetContents2)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setGeometry(QRect(390, 430, 111, 41))
+        self.pushButton_4 = QPushButton(self.scrollAreaWidgetContents2)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.pushButton_4.setGeometry(QRect(270, 430, 111, 41))
         self.scrollArea1.setWidget(self.scrollAreaWidgetContents2)
         self.oled_setting_interface = QWidget(self.mainFrame)
         self.oled_setting_interface.setObjectName(u"oled_setting_interface")
@@ -577,11 +609,11 @@ class Ui_Dialog(object):
         self.sidebar.raise_()
         self.topbar.raise_()
         self.center_setting_interface.raise_()
-        self.controller_setting_interface.raise_()
         self.oled_setting_interface.raise_()
         self.overview_interface.raise_()
         self.enclosure_setting_interface.raise_()
         self.about_interface.raise_()
+        self.controller_setting_interface.raise_()
 
         self.retranslateUi(Dialog)
 
@@ -663,6 +695,12 @@ class Ui_Dialog(object):
         self.pushButton.setText(QCoreApplication.translate("Dialog", u"Cancel", None))
         self.label_9.setText(QCoreApplication.translate("Dialog", u"Overview", None))
         self.label_11.setText(QCoreApplication.translate("Dialog", u"Controller Setting", None))
+        self.groupBox_6.setTitle(QCoreApplication.translate("Dialog", u"Advanced Option:", None))
+        self.pushButton_5.setText(QCoreApplication.translate("Dialog", u"Reset Only", None))
+        self.pushButton_6.setText(QCoreApplication.translate("Dialog", u"Reset to DFU", None))
+        self.pushButton_9.setText(QCoreApplication.translate("Dialog", u"DFU Updater", None))
+        self.pushButton_3.setText(QCoreApplication.translate("Dialog", u"Cancel", None))
+        self.pushButton_4.setText(QCoreApplication.translate("Dialog", u"Apply", None))
         self.label_13.setText(QCoreApplication.translate("Dialog", u"OLED Display Setting", None))
         self.label_10.setText(QCoreApplication.translate("Dialog", u"Center Setting", None))
     # retranslateUi

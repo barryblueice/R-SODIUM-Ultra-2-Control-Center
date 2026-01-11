@@ -1288,6 +1288,100 @@ QScrollArea QScrollBar::sub-page:vertical {
         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
        </property>
       </widget>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>120</y>
+         <width>171</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: #FAFAFA;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #444444;
+    font-size: 12px;
+}</string>
+       </property>
+       <property name="title">
+        <string>Advanced Option:</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reset Only</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>100</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reset to DFU</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>160</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>DFU Updater</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>430</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>430</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -1494,11 +1588,11 @@ QScrollArea QScrollBar::sub-page:vertical {
    <zorder>sidebar</zorder>
    <zorder>topbar</zorder>
    <zorder>center_setting_interface</zorder>
-   <zorder>controller_setting_interface</zorder>
    <zorder>oled_setting_interface</zorder>
    <zorder>overview_interface</zorder>
    <zorder>enclosure_setting_interface</zorder>
    <zorder>about_interface</zorder>
+   <zorder>controller_setting_interface</zorder>
   </widget>
  </widget>
  <resources>

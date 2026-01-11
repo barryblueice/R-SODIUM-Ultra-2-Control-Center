@@ -2,6 +2,14 @@ import sys
 from PySide6.QtWidgets import QApplication, QDialog, QWidget
 from PySide6.QtCore import QPropertyAnimation, QEasingCurve, Qt
 from Ui_main import Ui_Dialog
+from PySide6.QtWidgets import QGraphicsDropShadowEffect
+from PySide6.QtGui import QColor
+
+shadow = QGraphicsDropShadowEffect()
+
+shadow.setBlurRadius(20)
+shadow.setColor(QColor(0, 0, 0, 70))
+shadow.setOffset(0, 2)
 
 import interface_controller
 
@@ -10,6 +18,8 @@ class MainDialog(QDialog):
         super().__init__()
         self.ui = Ui_Dialog()
         self.ui.setupUi(self)
+        
+        self.ui.mainFrame.setGraphicsEffect(shadow)
         
         self.ui.overview_interface.setVisible(True)
         self.ui.enclosure_setting_interface.setVisible(False)
