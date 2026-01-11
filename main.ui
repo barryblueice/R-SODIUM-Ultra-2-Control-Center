@@ -919,6 +919,11 @@ QGroupBox::title {
           <height>19</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+        </property>
         <property name="text">
          <string>SATA-PM (Default)</string>
         </property>
@@ -1192,14 +1197,14 @@ QScrollArea QScrollBar::sub-page:vertical {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>523</width>
-        <height>900</height>
+        <width>531</width>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>900</height>
+        <height>481</height>
        </size>
       </property>
       <widget class="QLabel" name="label_9">
@@ -1232,13 +1237,644 @@ QScrollArea QScrollBar::sub-page:vertical {
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>420</y>
+         <y>480</y>
          <width>531</width>
-         <height>481</height>
+         <height>421</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">background: transparent;</string>
+       </property>
+      </widget>
+      <widget class="TemperatureGauge" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>100</y>
+         <width>141</width>
+         <height>141</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="TemperatureGauge" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>100</y>
+         <width>141</width>
+         <height>141</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="TemperatureGauge" name="widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>100</y>
+         <width>141</width>
+         <height>141</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>80</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Temperature Status:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>240</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>MP4245 Temp.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>240</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sensor #1 Temp.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>240</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sensor #2 Temp.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_9">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>280</y>
+         <width>461</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: #FAFAFA;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #444444;
+    font-size: 12px;
+}</string>
+       </property>
+       <property name="title">
+        <string>Power Status Monitor:</string>
+       </property>
+       <widget class="QGroupBox" name="groupBox_11">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>20</y>
+          <width>91</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: #FAFAFA;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #444444;
+    font-size: 12px;
+}</string>
+        </property>
+        <property name="title">
+         <string>SATA NGFF:</string>
+        </property>
+        <widget class="QLabel" name="label_26">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>30</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>U: 99.99 V</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_27">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>60</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>I: 99.99 A</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_28">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>90</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>P: 99.99 W</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_12">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: #FAFAFA;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #444444;
+    font-size: 12px;
+}</string>
+        </property>
+        <property name="title">
+         <string>BUS:</string>
+        </property>
+        <widget class="QLabel" name="label_29">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>48</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>U2: 99.99 V</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_30">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>73</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>I: 99.99 A</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_31">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>98</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>P: 99.99 W</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>22</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>U1: 99.99 V</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_13">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>20</y>
+          <width>91</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: #FAFAFA;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #444444;
+    font-size: 12px;
+}</string>
+        </property>
+        <property name="title">
+         <string>SATA 2.5:</string>
+        </property>
+        <widget class="QLabel" name="label_32">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>30</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>U: 99.99 V</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_33">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>60</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>I: 99.99 A</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>90</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>P: 99.99 W</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_14">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>20</y>
+          <width>91</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: #FAFAFA;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #444444;
+    font-size: 12px;
+}</string>
+        </property>
+        <property name="title">
+         <string>NVMe:</string>
+        </property>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>30</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>U: 99.99 V</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>60</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>I: 99.99 A</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_37">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>90</y>
+           <width>85</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: transparent;</string>
+         </property>
+         <property name="text">
+          <string>P: 99.99 W</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_21">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>160</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string>SATA 2.5</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_22">
+        <property name="geometry">
+         <rect>
+          <x>367</x>
+          <y>160</y>
+          <width>83</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string>NVMe</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_24">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>160</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string>SATA NGFF</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>25</x>
+          <y>160</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Disk(s) On-Power Status:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_16">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>30</y>
+         <width>111</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+       </property>
+       <property name="text">
+        <string>Self-Powered</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_20">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>60</y>
+         <width>111</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ext-Powered</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
        </property>
       </widget>
      </widget>
@@ -1583,6 +2219,77 @@ QGroupBox::title {
         <widget class="FanNoCurveWidget" name="page_2"/>
        </widget>
       </widget>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>290</y>
+         <width>271</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: #FAFAFA;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #444444;
+    font-size: 12px;
+}</string>
+       </property>
+       <property name="title">
+        <string>RGB LED Setting:</string>
+       </property>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp. Warning Threshold:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>70</y>
+          <width>70</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="value">
+         <number>40</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>70</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>°C</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -1792,6 +2499,11 @@ QScrollArea QScrollBar::sub-page:vertical {
          <height>21</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+       </property>
        <property name="text">
         <string>Automatically check firmware update when device attached</string>
        </property>
@@ -1804,6 +2516,11 @@ QScrollArea QScrollBar::sub-page:vertical {
          <width>381</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
        </property>
        <property name="text">
         <string>Automatically check for updates on startup</string>
@@ -1818,6 +2535,11 @@ QScrollArea QScrollBar::sub-page:vertical {
          <height>21</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+       </property>
        <property name="text">
         <string>Launch center automatically after system startup</string>
        </property>
@@ -1831,21 +2553,13 @@ QScrollArea QScrollBar::sub-page:vertical {
          <height>21</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+       </property>
        <property name="text">
         <string>Minimized the center after center startup</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox_16">
-       <property name="geometry">
-        <rect>
-         <x>60</x>
-         <y>260</y>
-         <width>381</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Use Fahrenheit for temperature (Celsius by default)</string>
        </property>
       </widget>
       <widget class="QPushButton" name="pushButton_10">
@@ -1874,17 +2588,35 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string>Apply</string>
        </property>
       </widget>
+      <widget class="QCheckBox" name="checkBox_23">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>260</y>
+         <width>381</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+       </property>
+       <property name="text">
+        <string>Use Fahrenheit for temperature (Celsius by default)</string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
    <zorder>sidebar</zorder>
    <zorder>topbar</zorder>
-   <zorder>overview_interface</zorder>
-   <zorder>enclosure_setting_interface</zorder>
    <zorder>about_interface</zorder>
    <zorder>oled_setting_interface</zorder>
-   <zorder>center_setting_interface</zorder>
    <zorder>controller_setting_interface</zorder>
+   <zorder>center_setting_interface</zorder>
+   <zorder>enclosure_setting_interface</zorder>
+   <zorder>overview_interface</zorder>
   </widget>
  </widget>
  <customwidgets>
@@ -1898,6 +2630,12 @@ QScrollArea QScrollBar::sub-page:vertical {
    <class>FanNoCurveWidget</class>
    <extends>QWidget</extends>
    <header>fancurve.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TemperatureGauge</class>
+   <extends>QWidget</extends>
+   <header>TempGauge.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

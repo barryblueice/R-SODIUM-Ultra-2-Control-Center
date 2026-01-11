@@ -17,8 +17,10 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDialog,
     QFrame, QGroupBox, QLabel, QPushButton,
-    QScrollArea, QSizePolicy, QStackedWidget, QWidget)
+    QScrollArea, QSizePolicy, QSpinBox, QStackedWidget,
+    QWidget)
 
+from TempGauge import TemperatureGauge
 from fancurve import (FanCurveWidget, FanNoCurveWidget)
 import main_rc
 
@@ -351,6 +353,9 @@ class Ui_Dialog(object):
         self.checkBox_6 = QCheckBox(self.groupBox_2)
         self.checkBox_6.setObjectName(u"checkBox_6")
         self.checkBox_6.setGeometry(QRect(50, 40, 141, 19))
+        self.checkBox_6.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
         self.checkBox_6.setChecked(True)
         self.checkBox_6.setAutoExclusive(True)
         self.checkBox_4 = QCheckBox(self.groupBox_2)
@@ -459,8 +464,8 @@ class Ui_Dialog(object):
         self.overview_brief.setWidgetResizable(True)
         self.scrollAreaWidgetContents1 = QWidget()
         self.scrollAreaWidgetContents1.setObjectName(u"scrollAreaWidgetContents1")
-        self.scrollAreaWidgetContents1.setGeometry(QRect(0, 0, 523, 900))
-        self.scrollAreaWidgetContents1.setMinimumSize(QSize(0, 900))
+        self.scrollAreaWidgetContents1.setGeometry(QRect(0, 0, 531, 481))
+        self.scrollAreaWidgetContents1.setMinimumSize(QSize(0, 481))
         self.label_9 = QLabel(self.scrollAreaWidgetContents1)
         self.label_9.setObjectName(u"label_9")
         self.label_9.setGeometry(QRect(30, 10, 491, 51))
@@ -469,8 +474,225 @@ class Ui_Dialog(object):
         self.label_9.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
         self.overview_detail = QWidget(self.scrollAreaWidgetContents1)
         self.overview_detail.setObjectName(u"overview_detail")
-        self.overview_detail.setGeometry(QRect(0, 420, 531, 481))
+        self.overview_detail.setGeometry(QRect(0, 480, 531, 421))
         self.overview_detail.setStyleSheet(u"background: transparent;")
+        self.widget = TemperatureGauge(self.scrollAreaWidgetContents1)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(40, 100, 141, 141))
+        self.widget_2 = TemperatureGauge(self.scrollAreaWidgetContents1)
+        self.widget_2.setObjectName(u"widget_2")
+        self.widget_2.setGeometry(QRect(200, 100, 141, 141))
+        self.widget_3 = TemperatureGauge(self.scrollAreaWidgetContents1)
+        self.widget_3.setObjectName(u"widget_3")
+        self.widget_3.setGeometry(QRect(360, 100, 141, 141))
+        self.label_17 = QLabel(self.scrollAreaWidgetContents1)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setGeometry(QRect(50, 80, 131, 16))
+        self.label_20 = QLabel(self.scrollAreaWidgetContents1)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setGeometry(QRect(40, 240, 141, 20))
+        self.label_20.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_21 = QLabel(self.scrollAreaWidgetContents1)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setGeometry(QRect(200, 240, 141, 20))
+        self.label_21.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_22 = QLabel(self.scrollAreaWidgetContents1)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setGeometry(QRect(360, 240, 141, 20))
+        self.label_22.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.groupBox_9 = QGroupBox(self.scrollAreaWidgetContents1)
+        self.groupBox_9.setObjectName(u"groupBox_9")
+        self.groupBox_9.setGeometry(QRect(40, 280, 461, 191))
+        self.groupBox_9.setFont(font4)
+        self.groupBox_9.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.groupBox_11 = QGroupBox(self.groupBox_9)
+        self.groupBox_11.setObjectName(u"groupBox_11")
+        self.groupBox_11.setGeometry(QRect(130, 20, 91, 131))
+        self.groupBox_11.setFont(font4)
+        self.groupBox_11.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.label_26 = QLabel(self.groupBox_11)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setGeometry(QRect(3, 30, 85, 31))
+        self.label_26.setStyleSheet(u"background: transparent;")
+        self.label_26.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_27 = QLabel(self.groupBox_11)
+        self.label_27.setObjectName(u"label_27")
+        self.label_27.setGeometry(QRect(3, 60, 85, 31))
+        self.label_27.setStyleSheet(u"background: transparent;")
+        self.label_27.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_28 = QLabel(self.groupBox_11)
+        self.label_28.setObjectName(u"label_28")
+        self.label_28.setGeometry(QRect(3, 90, 85, 31))
+        self.label_28.setStyleSheet(u"background: transparent;")
+        self.label_28.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.groupBox_12 = QGroupBox(self.groupBox_9)
+        self.groupBox_12.setObjectName(u"groupBox_12")
+        self.groupBox_12.setGeometry(QRect(20, 20, 91, 131))
+        self.groupBox_12.setFont(font4)
+        self.groupBox_12.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.label_29 = QLabel(self.groupBox_12)
+        self.label_29.setObjectName(u"label_29")
+        self.label_29.setGeometry(QRect(3, 48, 85, 31))
+        self.label_29.setStyleSheet(u"background: transparent;")
+        self.label_29.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_30 = QLabel(self.groupBox_12)
+        self.label_30.setObjectName(u"label_30")
+        self.label_30.setGeometry(QRect(3, 73, 85, 31))
+        self.label_30.setStyleSheet(u"background: transparent;")
+        self.label_30.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_31 = QLabel(self.groupBox_12)
+        self.label_31.setObjectName(u"label_31")
+        self.label_31.setGeometry(QRect(3, 98, 85, 31))
+        self.label_31.setStyleSheet(u"background: transparent;")
+        self.label_31.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_38 = QLabel(self.groupBox_12)
+        self.label_38.setObjectName(u"label_38")
+        self.label_38.setGeometry(QRect(3, 22, 85, 31))
+        self.label_38.setStyleSheet(u"background: transparent;")
+        self.label_38.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.groupBox_13 = QGroupBox(self.groupBox_9)
+        self.groupBox_13.setObjectName(u"groupBox_13")
+        self.groupBox_13.setGeometry(QRect(240, 20, 91, 131))
+        self.groupBox_13.setFont(font4)
+        self.groupBox_13.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.label_32 = QLabel(self.groupBox_13)
+        self.label_32.setObjectName(u"label_32")
+        self.label_32.setGeometry(QRect(3, 30, 85, 31))
+        self.label_32.setStyleSheet(u"background: transparent;")
+        self.label_32.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_33 = QLabel(self.groupBox_13)
+        self.label_33.setObjectName(u"label_33")
+        self.label_33.setGeometry(QRect(3, 60, 85, 31))
+        self.label_33.setStyleSheet(u"background: transparent;")
+        self.label_33.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_34 = QLabel(self.groupBox_13)
+        self.label_34.setObjectName(u"label_34")
+        self.label_34.setGeometry(QRect(3, 90, 85, 31))
+        self.label_34.setStyleSheet(u"background: transparent;")
+        self.label_34.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.groupBox_14 = QGroupBox(self.groupBox_9)
+        self.groupBox_14.setObjectName(u"groupBox_14")
+        self.groupBox_14.setGeometry(QRect(350, 20, 91, 131))
+        self.groupBox_14.setFont(font4)
+        self.groupBox_14.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.label_35 = QLabel(self.groupBox_14)
+        self.label_35.setObjectName(u"label_35")
+        self.label_35.setGeometry(QRect(3, 30, 85, 31))
+        self.label_35.setStyleSheet(u"background: transparent;")
+        self.label_35.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_36 = QLabel(self.groupBox_14)
+        self.label_36.setObjectName(u"label_36")
+        self.label_36.setGeometry(QRect(3, 60, 85, 31))
+        self.label_36.setStyleSheet(u"background: transparent;")
+        self.label_36.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label_37 = QLabel(self.groupBox_14)
+        self.label_37.setObjectName(u"label_37")
+        self.label_37.setGeometry(QRect(3, 90, 85, 31))
+        self.label_37.setStyleSheet(u"background: transparent;")
+        self.label_37.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.checkBox_21 = QCheckBox(self.groupBox_9)
+        self.checkBox_21.setObjectName(u"checkBox_21")
+        self.checkBox_21.setGeometry(QRect(280, 160, 81, 21))
+        self.checkBox_21.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
+        self.checkBox_21.setCheckable(False)
+        self.checkBox_22 = QCheckBox(self.groupBox_9)
+        self.checkBox_22.setObjectName(u"checkBox_22")
+        self.checkBox_22.setGeometry(QRect(367, 160, 83, 21))
+        self.checkBox_22.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
+        self.checkBox_22.setCheckable(False)
+        self.checkBox_24 = QCheckBox(self.groupBox_9)
+        self.checkBox_24.setObjectName(u"checkBox_24")
+        self.checkBox_24.setGeometry(QRect(180, 160, 91, 21))
+        self.checkBox_24.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
+        self.checkBox_24.setCheckable(False)
+        self.label_23 = QLabel(self.groupBox_9)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setGeometry(QRect(25, 160, 151, 21))
+        self.checkBox_16 = QCheckBox(self.scrollAreaWidgetContents1)
+        self.checkBox_16.setObjectName(u"checkBox_16")
+        self.checkBox_16.setGeometry(QRect(390, 30, 111, 19))
+        self.checkBox_16.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
+        self.checkBox_16.setCheckable(False)
+        self.checkBox_20 = QCheckBox(self.scrollAreaWidgetContents1)
+        self.checkBox_20.setObjectName(u"checkBox_20")
+        self.checkBox_20.setGeometry(QRect(390, 60, 111, 19))
+        self.checkBox_20.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
+        self.checkBox_20.setCheckable(False)
         self.overview_brief.setWidget(self.scrollAreaWidgetContents1)
         self.controller_setting_interface = QWidget(self.mainFrame)
         self.controller_setting_interface.setObjectName(u"controller_setting_interface")
@@ -606,6 +828,34 @@ class Ui_Dialog(object):
         self.page_2 = FanNoCurveWidget()
         self.page_2.setObjectName(u"page_2")
         self.stackedWidget.addWidget(self.page_2)
+        self.groupBox_8 = QGroupBox(self.scrollAreaWidgetContents2)
+        self.groupBox_8.setObjectName(u"groupBox_8")
+        self.groupBox_8.setGeometry(QRect(230, 290, 271, 121))
+        self.groupBox_8.setStyleSheet(u"QGroupBox {\n"
+"    border: 1px solid #E0E0E0;\n"
+"    border-radius: 8px;\n"
+"    margin-top: 16px;\n"
+"    background-color: #FAFAFA;\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top left;\n"
+"    padding: 0 8px;\n"
+"    color: #444444;\n"
+"    font-size: 12px;\n"
+"}")
+        self.label_18 = QLabel(self.groupBox_8)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setGeometry(QRect(60, 40, 161, 21))
+        self.spinBox = QSpinBox(self.groupBox_8)
+        self.spinBox.setObjectName(u"spinBox")
+        self.spinBox.setGeometry(QRect(90, 70, 70, 31))
+        self.spinBox.setMaximum(100)
+        self.spinBox.setValue(40)
+        self.label_19 = QLabel(self.groupBox_8)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setGeometry(QRect(170, 70, 41, 31))
         self.scrollArea1.setWidget(self.scrollAreaWidgetContents2)
         self.oled_setting_interface = QWidget(self.mainFrame)
         self.oled_setting_interface.setObjectName(u"oled_setting_interface")
@@ -699,33 +949,48 @@ class Ui_Dialog(object):
         self.checkBox_12 = QCheckBox(self.scrollAreaWidgetContents4)
         self.checkBox_12.setObjectName(u"checkBox_12")
         self.checkBox_12.setGeometry(QRect(60, 100, 381, 21))
+        self.checkBox_12.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
         self.checkBox_13 = QCheckBox(self.scrollAreaWidgetContents4)
         self.checkBox_13.setObjectName(u"checkBox_13")
         self.checkBox_13.setGeometry(QRect(60, 140, 381, 21))
+        self.checkBox_13.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
         self.checkBox_14 = QCheckBox(self.scrollAreaWidgetContents4)
         self.checkBox_14.setObjectName(u"checkBox_14")
         self.checkBox_14.setGeometry(QRect(60, 180, 381, 21))
+        self.checkBox_14.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
         self.checkBox_15 = QCheckBox(self.scrollAreaWidgetContents4)
         self.checkBox_15.setObjectName(u"checkBox_15")
         self.checkBox_15.setGeometry(QRect(60, 220, 381, 21))
-        self.checkBox_16 = QCheckBox(self.scrollAreaWidgetContents4)
-        self.checkBox_16.setObjectName(u"checkBox_16")
-        self.checkBox_16.setGeometry(QRect(60, 260, 381, 21))
+        self.checkBox_15.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
         self.pushButton_10 = QPushButton(self.scrollAreaWidgetContents4)
         self.pushButton_10.setObjectName(u"pushButton_10")
         self.pushButton_10.setGeometry(QRect(390, 430, 111, 41))
         self.pushButton_11 = QPushButton(self.scrollAreaWidgetContents4)
         self.pushButton_11.setObjectName(u"pushButton_11")
         self.pushButton_11.setGeometry(QRect(270, 430, 111, 41))
+        self.checkBox_23 = QCheckBox(self.scrollAreaWidgetContents4)
+        self.checkBox_23.setObjectName(u"checkBox_23")
+        self.checkBox_23.setGeometry(QRect(60, 260, 381, 21))
+        self.checkBox_23.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
         self.scrollArea3.setWidget(self.scrollAreaWidgetContents4)
         self.sidebar.raise_()
         self.topbar.raise_()
-        self.overview_interface.raise_()
-        self.enclosure_setting_interface.raise_()
         self.about_interface.raise_()
         self.oled_setting_interface.raise_()
-        self.center_setting_interface.raise_()
         self.controller_setting_interface.raise_()
+        self.center_setting_interface.raise_()
+        self.enclosure_setting_interface.raise_()
+        self.overview_interface.raise_()
 
         self.retranslateUi(Dialog)
 
@@ -807,6 +1072,34 @@ class Ui_Dialog(object):
         self.pushButton_2.setText(QCoreApplication.translate("Dialog", u"Apply", None))
         self.pushButton.setText(QCoreApplication.translate("Dialog", u"Cancel", None))
         self.label_9.setText(QCoreApplication.translate("Dialog", u"Overview", None))
+        self.label_17.setText(QCoreApplication.translate("Dialog", u"Temperature Status:", None))
+        self.label_20.setText(QCoreApplication.translate("Dialog", u"MP4245 Temp.", None))
+        self.label_21.setText(QCoreApplication.translate("Dialog", u"Sensor #1 Temp.", None))
+        self.label_22.setText(QCoreApplication.translate("Dialog", u"Sensor #2 Temp.", None))
+        self.groupBox_9.setTitle(QCoreApplication.translate("Dialog", u"Power Status Monitor:", None))
+        self.groupBox_11.setTitle(QCoreApplication.translate("Dialog", u"SATA NGFF:", None))
+        self.label_26.setText(QCoreApplication.translate("Dialog", u"U: 99.99 V", None))
+        self.label_27.setText(QCoreApplication.translate("Dialog", u"I: 99.99 A", None))
+        self.label_28.setText(QCoreApplication.translate("Dialog", u"P: 99.99 W", None))
+        self.groupBox_12.setTitle(QCoreApplication.translate("Dialog", u"BUS:", None))
+        self.label_29.setText(QCoreApplication.translate("Dialog", u"U2: 99.99 V", None))
+        self.label_30.setText(QCoreApplication.translate("Dialog", u"I: 99.99 A", None))
+        self.label_31.setText(QCoreApplication.translate("Dialog", u"P: 99.99 W", None))
+        self.label_38.setText(QCoreApplication.translate("Dialog", u"U1: 99.99 V", None))
+        self.groupBox_13.setTitle(QCoreApplication.translate("Dialog", u"SATA 2.5:", None))
+        self.label_32.setText(QCoreApplication.translate("Dialog", u"U: 99.99 V", None))
+        self.label_33.setText(QCoreApplication.translate("Dialog", u"I: 99.99 A", None))
+        self.label_34.setText(QCoreApplication.translate("Dialog", u"P: 99.99 W", None))
+        self.groupBox_14.setTitle(QCoreApplication.translate("Dialog", u"NVMe:", None))
+        self.label_35.setText(QCoreApplication.translate("Dialog", u"U: 99.99 V", None))
+        self.label_36.setText(QCoreApplication.translate("Dialog", u"I: 99.99 A", None))
+        self.label_37.setText(QCoreApplication.translate("Dialog", u"P: 99.99 W", None))
+        self.checkBox_21.setText(QCoreApplication.translate("Dialog", u"SATA 2.5", None))
+        self.checkBox_22.setText(QCoreApplication.translate("Dialog", u"NVMe", None))
+        self.checkBox_24.setText(QCoreApplication.translate("Dialog", u"SATA NGFF", None))
+        self.label_23.setText(QCoreApplication.translate("Dialog", u"Disk(s) On-Power Status:", None))
+        self.checkBox_16.setText(QCoreApplication.translate("Dialog", u"Self-Powered", None))
+        self.checkBox_20.setText(QCoreApplication.translate("Dialog", u"Ext-Powered", None))
         self.label_11.setText(QCoreApplication.translate("Dialog", u"Controller Setting", None))
         self.groupBox_6.setTitle(QCoreApplication.translate("Dialog", u"Advanced Option:", None))
         self.pushButton_5.setText(QCoreApplication.translate("Dialog", u"Reset Only", None))
@@ -820,14 +1113,17 @@ class Ui_Dialog(object):
         self.checkBox_18.setText(QCoreApplication.translate("Dialog", u"Fixed Mode", None))
         self.checkBox_19.setText(QCoreApplication.translate("Dialog", u"Full-on Mode", None))
         self.label_14.setText(QCoreApplication.translate("Dialog", u"Fan Mode Select:", None))
+        self.groupBox_8.setTitle(QCoreApplication.translate("Dialog", u"RGB LED Setting:", None))
+        self.label_18.setText(QCoreApplication.translate("Dialog", u"Temp. Warning Threshold:", None))
+        self.label_19.setText(QCoreApplication.translate("Dialog", u"\u00b0C", None))
         self.label_13.setText(QCoreApplication.translate("Dialog", u"OLED Display Setting", None))
         self.label_10.setText(QCoreApplication.translate("Dialog", u"Center Setting", None))
         self.checkBox_12.setText(QCoreApplication.translate("Dialog", u"Automatically check firmware update when device attached", None))
         self.checkBox_13.setText(QCoreApplication.translate("Dialog", u"Automatically check for updates on startup", None))
         self.checkBox_14.setText(QCoreApplication.translate("Dialog", u"Launch center automatically after system startup", None))
         self.checkBox_15.setText(QCoreApplication.translate("Dialog", u"Minimized the center after center startup", None))
-        self.checkBox_16.setText(QCoreApplication.translate("Dialog", u"Use Fahrenheit for temperature (Celsius by default)", None))
         self.pushButton_10.setText(QCoreApplication.translate("Dialog", u"Cancel", None))
         self.pushButton_11.setText(QCoreApplication.translate("Dialog", u"Apply", None))
+        self.checkBox_23.setText(QCoreApplication.translate("Dialog", u"Use Fahrenheit for temperature (Celsius by default)", None))
     # retranslateUi
 
