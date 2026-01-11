@@ -744,6 +744,11 @@ QGroupBox::title {
            <height>19</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+         </property>
          <property name="text">
           <string>SATA1 (NGFF)</string>
          </property>
@@ -760,6 +765,11 @@ QGroupBox::title {
            <height>19</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+         </property>
          <property name="text">
           <string>SATA2 (2.5)</string>
          </property>
@@ -775,6 +785,11 @@ QGroupBox::title {
            <width>83</width>
            <height>19</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
          </property>
          <property name="text">
           <string>NVMe</string>
@@ -805,6 +820,11 @@ QGroupBox::title {
            <height>19</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+         </property>
          <property name="text">
           <string>SATA1 (NGFF)</string>
          </property>
@@ -821,6 +841,11 @@ QGroupBox::title {
            <height>19</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+         </property>
          <property name="text">
           <string>SATA2 (2.5)</string>
          </property>
@@ -836,6 +861,11 @@ QGroupBox::title {
            <width>83</width>
            <height>19</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
          </property>
          <property name="text">
           <string>NVMe</string>
@@ -908,8 +938,16 @@ QGroupBox::title {
           <height>19</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+        </property>
         <property name="text">
          <string>JBOD (Span)</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
         </property>
         <property name="autoExclusive">
          <bool>true</bool>
@@ -923,6 +961,11 @@ QGroupBox::title {
           <width>121</width>
           <height>19</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
         </property>
         <property name="text">
          <string>RAID 1</string>
@@ -939,6 +982,11 @@ QGroupBox::title {
           <width>121</width>
           <height>19</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
         </property>
         <property name="text">
          <string>RAID 0</string>
@@ -990,6 +1038,11 @@ QGroupBox::title {
           <width>151</width>
           <height>31</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
         </property>
         <property name="text">
          <string>Enable suspend by
@@ -1252,14 +1305,14 @@ QScrollArea QScrollBar::sub-page:vertical {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>523</width>
-        <height>900</height>
+        <width>531</width>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>900</height>
+        <height>481</height>
        </size>
       </property>
       <widget class="QLabel" name="label_11">
@@ -1291,10 +1344,10 @@ QScrollArea QScrollBar::sub-page:vertical {
       <widget class="QGroupBox" name="groupBox_6">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>120</y>
+         <x>40</x>
+         <y>290</y>
          <width>171</width>
-         <height>221</height>
+         <height>181</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -1320,7 +1373,7 @@ QGroupBox::title {
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>40</y>
+          <y>30</y>
           <width>111</width>
           <height>41</height>
          </rect>
@@ -1333,7 +1386,7 @@ QGroupBox::title {
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>100</y>
+          <y>80</y>
           <width>111</width>
           <height>41</height>
          </rect>
@@ -1346,7 +1399,7 @@ QGroupBox::title {
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>160</y>
+          <y>130</y>
           <width>111</width>
           <height>41</height>
          </rect>
@@ -1381,6 +1434,154 @@ QGroupBox::title {
        <property name="text">
         <string>Apply</string>
        </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_7">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>60</y>
+         <width>461</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: #FAFAFA;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #444444;
+    font-size: 12px;
+}</string>
+       </property>
+       <property name="title">
+        <string>Fan Setting:</string>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>30</y>
+          <width>2</width>
+          <height>180</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(161, 161, 161);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_17">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>90</y>
+          <width>111</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string>Curve Mode</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_18">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>130</y>
+          <width>111</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string>Fixed Mode</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_19">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>170</y>
+          <width>111</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string>Full-on Mode</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>50</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Fan Mode Select:</string>
+        </property>
+       </widget>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="geometry">
+         <rect>
+          <x>19</x>
+          <y>30</y>
+          <width>271</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="FanCurveWidget" name="page"/>
+        <widget class="FanNoCurveWidget" name="page_2"/>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -1546,14 +1747,14 @@ QScrollArea QScrollBar::sub-page:vertical {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>523</width>
-        <height>900</height>
+        <width>531</width>
+        <height>481</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>900</height>
+        <height>481</height>
        </size>
       </property>
       <widget class="QLabel" name="label_10">
@@ -1582,19 +1783,124 @@ QScrollArea QScrollBar::sub-page:vertical {
         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
        </property>
       </widget>
+      <widget class="QCheckBox" name="checkBox_12">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>100</y>
+         <width>381</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Automatically check firmware update when device attached</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_13">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>140</y>
+         <width>381</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Automatically check for updates on startup</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_14">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>180</y>
+         <width>381</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Launch center automatically after system startup</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_15">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>220</y>
+         <width>381</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Minimized the center after center startup</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_16">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>260</y>
+         <width>381</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Use Fahrenheit for temperature (Celsius by default)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>430</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>430</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
    <zorder>sidebar</zorder>
    <zorder>topbar</zorder>
-   <zorder>center_setting_interface</zorder>
-   <zorder>oled_setting_interface</zorder>
    <zorder>overview_interface</zorder>
    <zorder>enclosure_setting_interface</zorder>
    <zorder>about_interface</zorder>
+   <zorder>oled_setting_interface</zorder>
+   <zorder>center_setting_interface</zorder>
    <zorder>controller_setting_interface</zorder>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FanCurveWidget</class>
+   <extends>QWidget</extends>
+   <header>fancurve.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FanNoCurveWidget</class>
+   <extends>QWidget</extends>
+   <header>fancurve.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="main.qrc"/>
  </resources>
