@@ -2390,6 +2390,26 @@ QScrollArea QScrollBar::sub-page:vertical {
         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
        </property>
       </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>220</y>
+         <width>501</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Under development. 
+Stay tuned for updates.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -2612,11 +2632,11 @@ QScrollArea QScrollBar::sub-page:vertical {
    <zorder>sidebar</zorder>
    <zorder>topbar</zorder>
    <zorder>about_interface</zorder>
-   <zorder>oled_setting_interface</zorder>
    <zorder>controller_setting_interface</zorder>
-   <zorder>center_setting_interface</zorder>
    <zorder>enclosure_setting_interface</zorder>
    <zorder>overview_interface</zorder>
+   <zorder>center_setting_interface</zorder>
+   <zorder>oled_setting_interface</zorder>
   </widget>
  </widget>
  <customwidgets>
