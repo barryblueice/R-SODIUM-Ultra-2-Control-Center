@@ -12,12 +12,15 @@ shadow.setColor(QColor(0, 0, 0, 70))
 shadow.setOffset(0, 2)
 
 import interface_controller
+from ui.animation.widget_ani import WidgetAni
+from ui.animation.widget_drag import WidgetDrag
 
 class MainDialog(QDialog):
     def __init__(self):
         super().__init__()
         self.ui = Ui_Dialog()
         self.ui.setupUi(self)
+        self.drag_helper = WidgetDrag(self, self.ui.topbar)
         
         self.ui.mainFrame.setGraphicsEffect(shadow)
         
@@ -66,50 +69,16 @@ class MainDialog(QDialog):
 
         self.setWindowOpacity(0.0)
         self.show()
-        self.fade_in()
+        WidgetAni.fade_in(self)
         
         self._drag_active = False
         self._drag_position = None
 
-        self.ui.close.clicked.connect(self.fade_out_close)
-        self.ui.minimize.clicked.connect(self.minimize_window)
+        self.ui.close.clicked.connect(lambda: WidgetAni.fade_out_close(self))
+        self.ui.minimize.clicked.connect(lambda:WidgetAni.minimize_window(self))
         
     def ui_state(self,status: bool):
         self.ui_status = status
-            
-    def fade_in(self):
-        anim = QPropertyAnimation(self, b"windowOpacity")
-        anim.setDuration(150)
-        anim.setStartValue(0.0)
-        anim.setEndValue(1.0)
-        anim.setEasingCurve(QEasingCurve.OutCubic)
-        anim.start()
-        self.fade_in_anim = anim
-        
-    def fade_out_close(self):
-        anim = QPropertyAnimation(self, b"windowOpacity")
-        anim.setDuration(150)
-        anim.setStartValue(1.0)
-        anim.setEndValue(0.0)
-        anim.setEasingCurve(QEasingCurve.OutCubic)
-        anim.finished.connect(QApplication.quit)
-        anim.start()
-        self.fade_out_anim = anim
-        
-    def minimize_window(self):
-        anim = QPropertyAnimation(self, b"windowOpacity")
-        anim.setDuration(150)
-        anim.setStartValue(1.0)
-        anim.setEndValue(0.0)
-        anim.setEasingCurve(QEasingCurve.OutCubic)
-        anim.finished.connect(self.showMinimized)
-        anim.start()
-        self.fade_out_anim = anim
-        
-    def showEvent(self, event):
-        super().showEvent(event)
-        if self.windowOpacity() < 1.0:
-            self.fade_in()
             
     def show_only_one(self, target_widget):
         qw: QWidget
@@ -117,20 +86,13 @@ class MainDialog(QDialog):
             qw.setVisible(qw == target_widget)
             
     def mousePressEvent(self, event):
-        if event.button() == Qt.LeftButton and self.ui.topbar.underMouse():
-            self._drag_active = True
-            self._drag_position = event.globalPosition().toPoint() - self.frameGeometry().topLeft()
-            event.accept()
-                
+        self.drag_helper.mousePressEvent(event)
+
     def mouseMoveEvent(self, event):
-        if self._drag_active and event.buttons() & Qt.LeftButton:
-            self.move(event.globalPosition().toPoint() - self._drag_position)
-            event.accept()
+        self.drag_helper.mouseMoveEvent(event)
 
     def mouseReleaseEvent(self, event):
-        self._drag_active = False
-        event.accept()
-
+        self.drag_helper.mouseReleaseEvent(event)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

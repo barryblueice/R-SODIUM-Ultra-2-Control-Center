@@ -2612,7 +2612,7 @@ QScrollArea QScrollBar::sub-page:vertical {
        <property name="geometry">
         <rect>
          <x>60</x>
-         <y>260</y>
+         <y>300</y>
          <width>381</width>
          <height>21</height>
         </rect>
@@ -2626,6 +2626,24 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string>Use Fahrenheit for temperature (Celsius by default)</string>
        </property>
       </widget>
+      <widget class="QCheckBox" name="minimized_startup_checked_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>260</y>
+         <width>381</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    background: transparent;
+}</string>
+       </property>
+       <property name="text">
+        <string>Exit the center after close the window</string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -2633,10 +2651,10 @@ QScrollArea QScrollBar::sub-page:vertical {
    <zorder>topbar</zorder>
    <zorder>about_interface</zorder>
    <zorder>oled_setting_interface</zorder>
-   <zorder>center_setting_interface</zorder>
    <zorder>enclosure_setting_interface</zorder>
    <zorder>overview_interface</zorder>
    <zorder>controller_setting_interface</zorder>
+   <zorder>center_setting_interface</zorder>
   </widget>
  </widget>
  <customwidgets>

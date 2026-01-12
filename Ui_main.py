@@ -983,8 +983,14 @@ class Ui_Dialog(object):
         self.center_setting_apply.setGeometry(QRect(270, 430, 111, 41))
         self.fahrenheit_celsius_switch_checked = QCheckBox(self.scrollAreaWidgetContents3)
         self.fahrenheit_celsius_switch_checked.setObjectName(u"fahrenheit_celsius_switch_checked")
-        self.fahrenheit_celsius_switch_checked.setGeometry(QRect(60, 260, 381, 21))
+        self.fahrenheit_celsius_switch_checked.setGeometry(QRect(60, 300, 381, 21))
         self.fahrenheit_celsius_switch_checked.setStyleSheet(u"QCheckBox {\n"
+"    background: transparent;\n"
+"}")
+        self.minimized_startup_checked_2 = QCheckBox(self.scrollAreaWidgetContents3)
+        self.minimized_startup_checked_2.setObjectName(u"minimized_startup_checked_2")
+        self.minimized_startup_checked_2.setGeometry(QRect(60, 260, 381, 21))
+        self.minimized_startup_checked_2.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
         self.scrollArea3.setWidget(self.scrollAreaWidgetContents3)
@@ -992,10 +998,10 @@ class Ui_Dialog(object):
         self.topbar.raise_()
         self.about_interface.raise_()
         self.oled_setting_interface.raise_()
-        self.center_setting_interface.raise_()
         self.enclosure_setting_interface.raise_()
         self.overview_interface.raise_()
         self.controller_setting_interface.raise_()
+        self.center_setting_interface.raise_()
 
         self.retranslateUi(Dialog)
 
@@ -1132,5 +1138,6 @@ class Ui_Dialog(object):
         self.center_setting_cancel.setText(QCoreApplication.translate("Dialog", u"Cancel", None))
         self.center_setting_apply.setText(QCoreApplication.translate("Dialog", u"Apply", None))
         self.fahrenheit_celsius_switch_checked.setText(QCoreApplication.translate("Dialog", u"Use Fahrenheit for temperature (Celsius by default)", None))
+        self.minimized_startup_checked_2.setText(QCoreApplication.translate("Dialog", u"Exit the center after close the window", None))
     # retranslateUi
 
