@@ -643,7 +643,7 @@ QScrollArea QScrollBar::sub-page:vertical {
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -735,7 +735,7 @@ QGroupBox::title {
         <property name="title">
          <string>Self-Powered:</string>
         </property>
-        <widget class="QCheckBox" name="checkBox_2">
+        <widget class="QCheckBox" name="self_sata1_pwr_checked">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -756,7 +756,7 @@ QGroupBox::title {
           <bool>false</bool>
          </property>
         </widget>
-        <widget class="QCheckBox" name="checkBox_3">
+        <widget class="QCheckBox" name="self_sata2_pwr_checked">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -777,7 +777,7 @@ QGroupBox::title {
           <bool>false</bool>
          </property>
         </widget>
-        <widget class="QCheckBox" name="checkBox">
+        <widget class="QCheckBox" name="self_nvme_pwr_checked">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -811,7 +811,7 @@ QGroupBox::title {
         <property name="title">
          <string>Ext-Powered:</string>
         </property>
-        <widget class="QCheckBox" name="checkBox_9">
+        <widget class="QCheckBox" name="ext_sata1_pwr_checked">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -832,7 +832,7 @@ QGroupBox::title {
           <bool>false</bool>
          </property>
         </widget>
-        <widget class="QCheckBox" name="checkBox_10">
+        <widget class="QCheckBox" name="ext_sata2_pwr_checked">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -853,7 +853,7 @@ QGroupBox::title {
           <bool>false</bool>
          </property>
         </widget>
-        <widget class="QCheckBox" name="checkBox_11">
+        <widget class="QCheckBox" name="ext_nvme_pwr_checked">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -910,7 +910,7 @@ QGroupBox::title {
        <property name="title">
         <string>ASM1352R Config:</string>
        </property>
-       <widget class="QCheckBox" name="checkBox_6">
+       <widget class="QCheckBox" name="_1352_pm_checked">
         <property name="geometry">
          <rect>
           <x>50</x>
@@ -934,7 +934,7 @@ QGroupBox::title {
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_4">
+       <widget class="QCheckBox" name="_1352_jbod_checked">
         <property name="geometry">
          <rect>
           <x>50</x>
@@ -958,7 +958,7 @@ QGroupBox::title {
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_5">
+       <widget class="QCheckBox" name="_1352_r1_checked">
         <property name="geometry">
          <rect>
           <x>50</x>
@@ -979,7 +979,7 @@ QGroupBox::title {
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_7">
+       <widget class="QCheckBox" name="_1352_r0_checked">
         <property name="geometry">
          <rect>
           <x>50</x>
@@ -1035,7 +1035,7 @@ QGroupBox::title {
        <property name="title">
         <string>Other Config:</string>
        </property>
-       <widget class="QCheckBox" name="checkBox_8">
+       <widget class="QCheckBox" name="hddpc_suspend_enable_checked">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -1057,7 +1057,7 @@ HDDPC signal</string>
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QComboBox" name="comboBox">
+       <widget class="QComboBox" name="pd_mode_select_combobox">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -1107,7 +1107,7 @@ QComboBox QAbstractItemView {
         </property>
        </widget>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="enclosure_setting_apply">
        <property name="geometry">
         <rect>
          <x>270</x>
@@ -1120,7 +1120,7 @@ QComboBox QAbstractItemView {
         <string>Apply</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="enclosure_setting_cancel">
        <property name="geometry">
         <rect>
          <x>390</x>
@@ -1246,7 +1246,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string notr="true">background: transparent;</string>
        </property>
       </widget>
-      <widget class="TemperatureGauge" name="widget" native="true">
+      <widget class="TemperatureGauge" name="temp_mp4245" native="true">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -1256,7 +1256,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         </rect>
        </property>
       </widget>
-      <widget class="TemperatureGauge" name="widget_2" native="true">
+      <widget class="TemperatureGauge" name="temp_sensor_1" native="true">
        <property name="geometry">
         <rect>
          <x>200</x>
@@ -1266,7 +1266,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         </rect>
        </property>
       </widget>
-      <widget class="TemperatureGauge" name="widget_3" native="true">
+      <widget class="TemperatureGauge" name="temp_sensor_2" native="true">
        <property name="geometry">
         <rect>
          <x>360</x>
@@ -1405,7 +1405,7 @@ QGroupBox::title {
         <property name="title">
          <string>SATA NGFF:</string>
         </property>
-        <widget class="QLabel" name="label_26">
+        <widget class="QLabel" name="sata1_voltage">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1418,13 +1418,13 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>U: 99.99 V</string>
+          <string>U: 0.00 V</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_27">
+        <widget class="QLabel" name="sata1_current">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1437,13 +1437,13 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>I: 99.99 A</string>
+          <string>I: 0.00 A</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_28">
+        <widget class="QLabel" name="sata1_consumption">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1456,7 +1456,7 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>P: 99.99 W</string>
+          <string>P: 0.00 W</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -1497,7 +1497,7 @@ QGroupBox::title {
         <property name="title">
          <string>BUS:</string>
         </property>
-        <widget class="QLabel" name="label_29">
+        <widget class="QLabel" name="bus_voltage">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1510,13 +1510,13 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>U2: 99.99 V</string>
+          <string>U2: 0.00 V</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_30">
+        <widget class="QLabel" name="bus_current">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1529,13 +1529,13 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>I: 99.99 A</string>
+          <string>I: 0.00 A</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_31">
+        <widget class="QLabel" name="bus_consumption">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1548,13 +1548,13 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>P: 99.99 W</string>
+          <string>P: 0.00 W</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_38">
+        <widget class="QLabel" name="mp4245_voltage">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1567,7 +1567,7 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>U1: 99.99 V</string>
+          <string>U1: 0.00 V</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -1608,7 +1608,7 @@ QGroupBox::title {
         <property name="title">
          <string>SATA 2.5:</string>
         </property>
-        <widget class="QLabel" name="label_32">
+        <widget class="QLabel" name="sata2_voltage">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1621,13 +1621,13 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>U: 99.99 V</string>
+          <string>U: 0.00 V</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_33">
+        <widget class="QLabel" name="sata2_current">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1640,13 +1640,13 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>I: 99.99 A</string>
+          <string>I: 0.00 A</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_34">
+        <widget class="QLabel" name="sata2_consumption">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1659,7 +1659,7 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>P: 99.99 W</string>
+          <string>P: 0.00 W</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -1700,7 +1700,7 @@ QGroupBox::title {
         <property name="title">
          <string>NVMe:</string>
         </property>
-        <widget class="QLabel" name="label_35">
+        <widget class="QLabel" name="nvme_voltage">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1713,13 +1713,13 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>U: 99.99 V</string>
+          <string>U: 0.00 V</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_36">
+        <widget class="QLabel" name="nvme_current">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1732,13 +1732,13 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>I: 99.99 A</string>
+          <string>I: 0.00 A</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_37">
+        <widget class="QLabel" name="nvme_consumption">
          <property name="geometry">
           <rect>
            <x>3</x>
@@ -1751,14 +1751,14 @@ QGroupBox::title {
           <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
-          <string>P: 99.99 W</string>
+          <string>P: 0.00 W</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
        </widget>
-       <widget class="QCheckBox" name="checkBox_21">
+       <widget class="QCheckBox" name="sata2_pwr_stat_checked">
         <property name="geometry">
          <rect>
           <x>280</x>
@@ -1779,7 +1779,7 @@ QGroupBox::title {
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_22">
+       <widget class="QCheckBox" name="nvme_pwr_stat_checked">
         <property name="geometry">
          <rect>
           <x>367</x>
@@ -1800,7 +1800,7 @@ QGroupBox::title {
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_24">
+       <widget class="QCheckBox" name="sata1_pwr_stat_checked">
         <property name="geometry">
          <rect>
           <x>180</x>
@@ -1835,7 +1835,7 @@ QGroupBox::title {
         </property>
        </widget>
       </widget>
-      <widget class="QCheckBox" name="checkBox_16">
+      <widget class="QCheckBox" name="self_pwr_stat_checked">
        <property name="geometry">
         <rect>
          <x>390</x>
@@ -1856,7 +1856,7 @@ QGroupBox::title {
         <bool>false</bool>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_20">
+      <widget class="QCheckBox" name="ext_pwr_stat_checked">
        <property name="geometry">
         <rect>
          <x>390</x>
@@ -2005,7 +2005,7 @@ QGroupBox::title {
        <property name="title">
         <string>Advanced Option:</string>
        </property>
-       <widget class="QPushButton" name="pushButton_5">
+       <widget class="QPushButton" name="reset_only_btn">
         <property name="geometry">
          <rect>
           <x>30</x>
@@ -2018,7 +2018,7 @@ QGroupBox::title {
          <string>Reset Only</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_6">
+       <widget class="QPushButton" name="reset_to_dfu_btn">
         <property name="geometry">
          <rect>
           <x>30</x>
@@ -2031,7 +2031,7 @@ QGroupBox::title {
          <string>Reset to DFU</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_9">
+       <widget class="QPushButton" name="dfu_update_btn">
         <property name="geometry">
          <rect>
           <x>30</x>
@@ -2045,7 +2045,7 @@ QGroupBox::title {
         </property>
        </widget>
       </widget>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="controller_setting_cancel">
        <property name="geometry">
         <rect>
          <x>390</x>
@@ -2058,7 +2058,7 @@ QGroupBox::title {
         <string>Cancel</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="controller_setting_apply">
        <property name="geometry">
         <rect>
          <x>270</x>
@@ -2115,7 +2115,7 @@ QGroupBox::title {
          <string/>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_17">
+       <widget class="QCheckBox" name="curve_mode_btn">
         <property name="geometry">
          <rect>
           <x>330</x>
@@ -2142,7 +2142,7 @@ QGroupBox::title {
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_18">
+       <widget class="QCheckBox" name="fixed_mode_btn">
         <property name="geometry">
          <rect>
           <x>330</x>
@@ -2166,7 +2166,7 @@ QGroupBox::title {
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_19">
+       <widget class="QCheckBox" name="fullon_mode_btn">
         <property name="geometry">
          <rect>
           <x>330</x>
@@ -2203,7 +2203,7 @@ QGroupBox::title {
          <string>Fan Mode Select:</string>
         </property>
        </widget>
-       <widget class="QStackedWidget" name="stackedWidget">
+       <widget class="QStackedWidget" name="FanSettingWidget">
         <property name="geometry">
          <rect>
           <x>19</x>
@@ -2213,10 +2213,10 @@ QGroupBox::title {
          </rect>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
-        <widget class="FanCurveWidget" name="page"/>
-        <widget class="FanNoCurveWidget" name="page_2"/>
+        <widget class="FanCurveWidget" name="FanCurveSetting"/>
+        <widget class="FanNoCurveWidget" name="FanNoCurveWidget"/>
        </widget>
       </widget>
       <widget class="QGroupBox" name="groupBox_8">
@@ -2260,7 +2260,7 @@ QGroupBox::title {
          <string>Temp. Warning Threshold:</string>
         </property>
        </widget>
-       <widget class="QSpinBox" name="spinBox">
+       <widget class="QSpinBox" name="temp_setting_spinbox">
         <property name="geometry">
          <rect>
           <x>90</x>
@@ -2276,7 +2276,7 @@ QGroupBox::title {
          <number>40</number>
         </property>
        </widget>
-       <widget class="QLabel" name="label_19">
+       <widget class="QLabel" name="temp_setting_show">
         <property name="geometry">
          <rect>
           <x>170</x>
@@ -2510,7 +2510,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_12">
+      <widget class="QCheckBox" name="firmware_update_checked">
        <property name="geometry">
         <rect>
          <x>60</x>
@@ -2528,7 +2528,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string>Automatically check firmware update when device attached</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_13">
+      <widget class="QCheckBox" name="center_update_checked">
        <property name="geometry">
         <rect>
          <x>60</x>
@@ -2546,7 +2546,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string>Automatically check for updates on startup</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_14">
+      <widget class="QCheckBox" name="launch_system_startup_checked">
        <property name="geometry">
         <rect>
          <x>60</x>
@@ -2564,7 +2564,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string>Launch center automatically after system startup</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_15">
+      <widget class="QCheckBox" name="minimized_startup_checked">
        <property name="geometry">
         <rect>
          <x>60</x>
@@ -2582,7 +2582,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string>Minimized the center after center startup</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="center_setting_cancel">
        <property name="geometry">
         <rect>
          <x>390</x>
@@ -2595,7 +2595,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string>Cancel</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_11">
+      <widget class="QPushButton" name="center_setting_apply">
        <property name="geometry">
         <rect>
          <x>270</x>
@@ -2608,7 +2608,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string>Apply</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_23">
+      <widget class="QCheckBox" name="fahrenheit_celsius_switch_checked">
        <property name="geometry">
         <rect>
          <x>60</x>
@@ -2632,11 +2632,11 @@ QScrollArea QScrollBar::sub-page:vertical {
    <zorder>sidebar</zorder>
    <zorder>topbar</zorder>
    <zorder>about_interface</zorder>
-   <zorder>controller_setting_interface</zorder>
+   <zorder>oled_setting_interface</zorder>
+   <zorder>center_setting_interface</zorder>
    <zorder>enclosure_setting_interface</zorder>
    <zorder>overview_interface</zorder>
-   <zorder>center_setting_interface</zorder>
-   <zorder>oled_setting_interface</zorder>
+   <zorder>controller_setting_interface</zorder>
   </widget>
  </widget>
  <customwidgets>
