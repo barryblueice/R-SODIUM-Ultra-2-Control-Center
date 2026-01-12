@@ -1000,7 +1000,7 @@ class Ui_Dialog(object):
         self.retranslateUi(Dialog)
 
         self.pd_mode_select_combobox.setCurrentIndex(0)
-        self.FanSettingWidget.setCurrentIndex(1)
+        self.FanSettingWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(Dialog)
