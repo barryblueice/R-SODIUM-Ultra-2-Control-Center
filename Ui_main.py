@@ -20,8 +20,8 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDialog,
     QScrollArea, QSizePolicy, QSpinBox, QStackedWidget,
     QWidget)
 
-from TempGauge import TemperatureGauge
-from fancurve import (FanCurveWidget, FanNoCurveWidget)
+from ui.widgets.TempGauge import TemperatureGauge
+from ui.widgets.fancurve import (FanCurveWidget, FanNoCurveWidget)
 import main_rc
 
 class Ui_Dialog(object):
@@ -57,7 +57,7 @@ class Ui_Dialog(object):
 "    background-color: rgb(220, 220, 220);\n"
 "}")
         icon1 = QIcon()
-        icon1.addFile(u":/icon/res/close.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon1.addFile(u":/icon/res/icon/close.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.close.setIcon(icon1)
         self.close.setIconSize(QSize(18, 18))
         self.close.setAutoDefault(False)
@@ -78,7 +78,7 @@ class Ui_Dialog(object):
 "    background-color: rgb(220, 220, 220);\n"
 "}")
         icon2 = QIcon()
-        icon2.addFile(u":/icon/res/minimize.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon2.addFile(u":/icon/res/icon/minimize.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.minimize.setIcon(icon2)
         self.minimize.setIconSize(QSize(14, 17))
         self.minimize.setAutoRepeat(False)
@@ -95,7 +95,7 @@ class Ui_Dialog(object):
         self.icon = QLabel(self.topbar)
         self.icon.setObjectName(u"icon")
         self.icon.setGeometry(QRect(10, 9, 25, 25))
-        self.icon.setPixmap(QPixmap(u":/icon/res/icon.svg"))
+        self.icon.setPixmap(QPixmap(u":/icon/res/icon/icon.svg"))
         self.icon.setScaledContents(True)
         self.sidebar = QWidget(self.mainFrame)
         self.sidebar.setObjectName(u"sidebar")
@@ -106,7 +106,7 @@ class Ui_Dialog(object):
         self.overviewbutton.setGeometry(QRect(20, 60, 60, 60))
         self.overviewbutton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon3 = QIcon()
-        icon3.addFile(u":/icon/res/overview.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon3.addFile(u":/icon/res/icon/overview.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.overviewbutton.setIcon(icon3)
         self.overviewbutton.setIconSize(QSize(33, 38))
         self.overviewbutton.setAutoDefault(False)
@@ -116,7 +116,7 @@ class Ui_Dialog(object):
         self.enclosuresettingbutton.setGeometry(QRect(20, 130, 60, 60))
         self.enclosuresettingbutton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon4 = QIcon()
-        icon4.addFile(u":/icon/res/disk.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon4.addFile(u":/icon/res/icon/disk.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.enclosuresettingbutton.setIcon(icon4)
         self.enclosuresettingbutton.setIconSize(QSize(33, 38))
         self.enclosuresettingbutton.setAutoDefault(False)
@@ -126,7 +126,7 @@ class Ui_Dialog(object):
         self.controllersettingbutton.setGeometry(QRect(20, 200, 60, 60))
         self.controllersettingbutton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon5 = QIcon()
-        icon5.addFile(u":/icon/res/controller.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon5.addFile(u":/icon/res/icon/controller.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.controllersettingbutton.setIcon(icon5)
         self.controllersettingbutton.setIconSize(QSize(33, 38))
         self.controllersettingbutton.setAutoDefault(False)
@@ -136,7 +136,7 @@ class Ui_Dialog(object):
         self.oledsettingbutton.setGeometry(QRect(20, 270, 60, 60))
         self.oledsettingbutton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon6 = QIcon()
-        icon6.addFile(u":/icon/res/display.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon6.addFile(u":/icon/res/icon/display.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.oledsettingbutton.setIcon(icon6)
         self.oledsettingbutton.setIconSize(QSize(33, 38))
         self.oledsettingbutton.setAutoDefault(False)
@@ -146,7 +146,7 @@ class Ui_Dialog(object):
         self.centersettingbutton.setGeometry(QRect(20, 340, 60, 60))
         self.centersettingbutton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon7 = QIcon()
-        icon7.addFile(u":/icon/res/setting.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon7.addFile(u":/icon/res/icon/setting.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.centersettingbutton.setIcon(icon7)
         self.centersettingbutton.setIconSize(QSize(33, 38))
         self.centersettingbutton.setAutoDefault(False)
@@ -156,7 +156,7 @@ class Ui_Dialog(object):
         self.aboutbutton.setGeometry(QRect(20, 410, 60, 60))
         self.aboutbutton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon8 = QIcon()
-        icon8.addFile(u":/icon/res/about.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon8.addFile(u":/icon/res/icon/about.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.aboutbutton.setIcon(icon8)
         self.aboutbutton.setIconSize(QSize(33, 38))
         self.aboutbutton.setAutoDefault(False)
@@ -206,7 +206,7 @@ class Ui_Dialog(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_8.sizePolicy().hasHeightForWidth())
         self.label_8.setSizePolicy(sizePolicy)
-        self.label_8.setPixmap(QPixmap(u":/pic/res/TITLE.png"))
+        self.label_8.setPixmap(QPixmap(u":/pic/res/pic/TITLE.png"))
         self.label_8.setScaledContents(True)
         self.label_8.setWordWrap(False)
         self.enclosure_setting_interface = QWidget(self.mainFrame)
@@ -999,9 +999,9 @@ class Ui_Dialog(object):
         self.about_interface.raise_()
         self.oled_setting_interface.raise_()
         self.enclosure_setting_interface.raise_()
-        self.overview_interface.raise_()
         self.controller_setting_interface.raise_()
         self.center_setting_interface.raise_()
+        self.overview_interface.raise_()
 
         self.retranslateUi(Dialog)
 

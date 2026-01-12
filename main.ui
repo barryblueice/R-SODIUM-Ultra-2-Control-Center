@@ -79,7 +79,7 @@ QPushButton:pressed {
      </property>
      <property name="icon">
       <iconset resource="main.qrc">
-       <normaloff>:/icon/res/close.svg</normaloff>:/icon/res/close.svg</iconset>
+       <normaloff>:/icon/res/icon/close.svg</normaloff>:/icon/res/icon/close.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -124,7 +124,7 @@ QPushButton:pressed {
      </property>
      <property name="icon">
       <iconset resource="main.qrc">
-       <normaloff>:/icon/res/minimize.svg</normaloff>:/icon/res/minimize.svg</iconset>
+       <normaloff>:/icon/res/icon/minimize.svg</normaloff>:/icon/res/icon/minimize.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -177,7 +177,7 @@ QPushButton:pressed {
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="main.qrc">:/icon/res/icon.svg</pixmap>
+      <pixmap resource="main.qrc">:/icon/res/icon/icon.svg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -222,7 +222,7 @@ QPushButton:pressed {
      </property>
      <property name="icon">
       <iconset resource="main.qrc">
-       <normaloff>:/icon/res/overview.svg</normaloff>:/icon/res/overview.svg</iconset>
+       <normaloff>:/icon/res/icon/overview.svg</normaloff>:/icon/res/icon/overview.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -257,7 +257,7 @@ QPushButton:pressed {
      </property>
      <property name="icon">
       <iconset resource="main.qrc">
-       <normaloff>:/icon/res/disk.svg</normaloff>:/icon/res/disk.svg</iconset>
+       <normaloff>:/icon/res/icon/disk.svg</normaloff>:/icon/res/icon/disk.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -292,7 +292,7 @@ QPushButton:pressed {
      </property>
      <property name="icon">
       <iconset resource="main.qrc">
-       <normaloff>:/icon/res/controller.svg</normaloff>:/icon/res/controller.svg</iconset>
+       <normaloff>:/icon/res/icon/controller.svg</normaloff>:/icon/res/icon/controller.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -327,7 +327,7 @@ QPushButton:pressed {
      </property>
      <property name="icon">
       <iconset resource="main.qrc">
-       <normaloff>:/icon/res/display.svg</normaloff>:/icon/res/display.svg</iconset>
+       <normaloff>:/icon/res/icon/display.svg</normaloff>:/icon/res/icon/display.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -362,7 +362,7 @@ QPushButton:pressed {
      </property>
      <property name="icon">
       <iconset resource="main.qrc">
-       <normaloff>:/icon/res/setting.svg</normaloff>:/icon/res/setting.svg</iconset>
+       <normaloff>:/icon/res/icon/setting.svg</normaloff>:/icon/res/icon/setting.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -397,7 +397,7 @@ QPushButton:pressed {
      </property>
      <property name="icon">
       <iconset resource="main.qrc">
-       <normaloff>:/icon/res/about.svg</normaloff>:/icon/res/about.svg</iconset>
+       <normaloff>:/icon/res/icon/about.svg</normaloff>:/icon/res/icon/about.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -572,7 +572,7 @@ QPushButton:pressed {
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="main.qrc">:/pic/res/TITLE.png</pixmap>
+      <pixmap resource="main.qrc">:/pic/res/pic/TITLE.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -2652,28 +2652,28 @@ QScrollArea QScrollBar::sub-page:vertical {
    <zorder>about_interface</zorder>
    <zorder>oled_setting_interface</zorder>
    <zorder>enclosure_setting_interface</zorder>
-   <zorder>overview_interface</zorder>
    <zorder>controller_setting_interface</zorder>
    <zorder>center_setting_interface</zorder>
+   <zorder>overview_interface</zorder>
   </widget>
  </widget>
  <customwidgets>
   <customwidget>
    <class>FanCurveWidget</class>
    <extends>QWidget</extends>
-   <header>fancurve.h</header>
+   <header>ui.widgets.fancurve.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
    <class>FanNoCurveWidget</class>
    <extends>QWidget</extends>
-   <header>fancurve.h</header>
+   <header>ui.widgets.fancurve.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
    <class>TemperatureGauge</class>
    <extends>QWidget</extends>
-   <header>TempGauge.h</header>
+   <header>ui.widgets.TempGauge.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -1,16 +1,16 @@
 <RCC>
   <qresource prefix="icon">
-    <file>res/about.svg</file>
-    <file>res/icon.svg</file>
-    <file>res/setting.svg</file>
-    <file>res/display.svg</file>
-    <file>res/controller.svg</file>
-    <file>res/disk.svg</file>
-    <file>res/overview.svg</file>
-    <file>res/close.svg</file>
-    <file>res/minimize.svg</file>
+    <file>res/icon/about.svg</file>
+    <file>res/icon/icon.svg</file>
+    <file>res/icon/setting.svg</file>
+    <file>res/icon/display.svg</file>
+    <file>res/icon/controller.svg</file>
+    <file>res/icon/disk.svg</file>
+    <file>res/icon/overview.svg</file>
+    <file>res/icon/close.svg</file>
+    <file>res/icon/minimize.svg</file>
   </qresource>
   <qresource prefix="pic">
-    <file>res/TITLE.png</file>
+    <file>res/pic/TITLE.png</file>
   </qresource>
 </RCC>
