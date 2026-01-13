@@ -113,24 +113,27 @@ class NotificationBar(QWidget):
             self.close()
             for n in active_notifications[index:]:
                 n.update_position(animated=True)
+                
+    def show_notification(message: str):
+        NotificationBar(f"{message} ", duration=2500)
 
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
+# if __name__ == "__main__":
+#     app = QApplication(sys.argv)
 
-    messages = [
-        "The program has minimzed to the system tray ",
-        "A new Ultra 2 Controller has been connected! ",
-        "A new Ultra 2 Controller has been removed! ",
-        "New firmware version is available for download ",
-        "New update for control center is available for download ",
-    ]
+#     messages = [
+#         "The program has minimzed to the system tray ",
+#         "A new Ultra 2 Controller has been connected! ",
+#         "A new Ultra 2 Controller has been removed! ",
+#         "New firmware version is available for download ",
+#         "New update for control center is available for download ",
+#     ]
 
-    def show_random_notification():
-        NotificationBar(random.choice(messages), duration=4000)
+#     def show_random_notification():
+#         NotificationBar(random.choice(messages), duration=4000)
 
-    timer = QTimer()
-    timer.timeout.connect(show_random_notification)
-    timer.start(random.randint(1000, 3000))
+#     timer = QTimer()
+#     timer.timeout.connect(show_random_notification)
+#     timer.start(random.randint(1000, 3000))
 
-    sys.exit(app.exec())
+#     sys.exit(app.exec())

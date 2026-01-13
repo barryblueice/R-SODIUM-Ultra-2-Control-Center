@@ -8,5 +8,6 @@ if __name__ == "__main__":
     app.setQuitOnLastWindowClosed(False)
     window = ui.main_windows.MainDialog()
 
-    window.show()
+    window.showNormal()
+    window.activateWindow()
     app.exec()

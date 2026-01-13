@@ -1,8 +1,9 @@
-import sys
+import os
+from PySide6 import QtWidgets
 from PySide6.QtWidgets import QDialog, QWidget
 from PySide6.QtCore import Qt
 from Ui_main import Ui_Dialog
-from PySide6.QtWidgets import QGraphicsDropShadowEffect
+from PySide6.QtWidgets import QGraphicsDropShadowEffect, QSystemTrayIcon
 from PySide6.QtGui import QColor
 
 shadow = QGraphicsDropShadowEffect()
@@ -13,8 +14,12 @@ shadow.setOffset(0, 2)
 
 import ui.func.interface_controller as interface_controller
 import ui.func.checked_controller as checked_controller
+
 from ui.animation.widget_ani import WidgetAni
 from ui.animation.widget_drag import WidgetDrag
+
+from ui.widgets.toast import NotificationBar
+from ui.widgets.trayicon import TrayIconWidget
 
 class MainDialog(QDialog):
     def __init__(self):
@@ -93,7 +98,15 @@ class MainDialog(QDialog):
         self._drag_position = None
 
         self.ui.close.clicked.connect(lambda: WidgetAni.fade_out_close(self))
+        # self.ui.close.clicked.connect(lambda:WidgetAni.minimize_window(self))
+        self.ui.close.clicked.connect(self.closeEvent)
         self.ui.minimize.clicked.connect(lambda:WidgetAni.minimize_window(self))
+        
+        self.trayicon = TrayIconWidget(self)
+
+    def closeEvent(self, event):
+        NotificationBar.show_notification("The center has minimized to tray.")
+        pass
         
     def ui_state(self,status: bool):
         self.ui_status = status
