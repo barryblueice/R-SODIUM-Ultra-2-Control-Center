@@ -3,6 +3,7 @@
 *.jpg
 *.xml
 *.bin
+*.ini
 *test*.py
 test*.py
 pyqttoast/

@@ -21,6 +21,8 @@ from ui.animation.widget_drag import WidgetDrag
 from ui.widgets.toast import NotificationBar
 from ui.widgets.trayicon import TrayIconWidget
 
+from ui.func.config_manager import config
+
 class MainDialog(QDialog):
     def __init__(self):
         super().__init__()
