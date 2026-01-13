@@ -216,7 +216,7 @@ class Ui_Dialog(object):
         self.scrollArea.setObjectName(u"scrollArea")
         self.scrollArea.setGeometry(QRect(-1, 10, 531, 481))
         font2 = QFont()
-        font2.setFamilies([u"Segoe UI"])
+        font2.setFamilies([u"Microsoft YaHei UI"])
         self.scrollArea.setFont(font2)
         self.scrollArea.setAutoFillBackground(True)
         self.scrollArea.setStyleSheet(u"QScrollArea QScrollBar:vertical {\n"
@@ -265,10 +265,10 @@ class Ui_Dialog(object):
         self.label_12.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
         self.groupBox = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox.setObjectName(u"groupBox")
-        self.groupBox.setGeometry(QRect(20, 70, 231, 401))
+        self.groupBox.setGeometry(QRect(40, 60, 211, 411))
         font4 = QFont()
-        font4.setFamilies([u"Segoe UI"])
-        font4.setPointSize(10)
+        font4.setFamilies([u"Microsoft YaHei UI"])
+        font4.setPointSize(9)
         self.groupBox.setFont(font4)
         self.groupBox.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
@@ -286,55 +286,55 @@ class Ui_Dialog(object):
 "}")
         self.groupBox_4 = QGroupBox(self.groupBox)
         self.groupBox_4.setObjectName(u"groupBox_4")
-        self.groupBox_4.setGeometry(QRect(30, 39, 171, 161))
+        self.groupBox_4.setGeometry(QRect(30, 39, 151, 161))
         self.self_sata1_pwr_checked = QCheckBox(self.groupBox_4)
         self.self_sata1_pwr_checked.setObjectName(u"self_sata1_pwr_checked")
-        self.self_sata1_pwr_checked.setGeometry(QRect(30, 80, 121, 19))
+        self.self_sata1_pwr_checked.setGeometry(QRect(20, 80, 121, 19))
         self.self_sata1_pwr_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
         self.self_sata1_pwr_checked.setAutoExclusive(False)
         self.self_sata2_pwr_checked = QCheckBox(self.groupBox_4)
         self.self_sata2_pwr_checked.setObjectName(u"self_sata2_pwr_checked")
-        self.self_sata2_pwr_checked.setGeometry(QRect(30, 110, 121, 19))
+        self.self_sata2_pwr_checked.setGeometry(QRect(20, 110, 121, 19))
         self.self_sata2_pwr_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
         self.self_sata2_pwr_checked.setAutoExclusive(False)
         self.self_nvme_pwr_checked = QCheckBox(self.groupBox_4)
         self.self_nvme_pwr_checked.setObjectName(u"self_nvme_pwr_checked")
-        self.self_nvme_pwr_checked.setGeometry(QRect(30, 50, 83, 19))
+        self.self_nvme_pwr_checked.setGeometry(QRect(20, 50, 83, 19))
         self.self_nvme_pwr_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
         self.self_nvme_pwr_checked.setAutoExclusive(False)
         self.groupBox_5 = QGroupBox(self.groupBox)
         self.groupBox_5.setObjectName(u"groupBox_5")
-        self.groupBox_5.setGeometry(QRect(30, 220, 171, 161))
+        self.groupBox_5.setGeometry(QRect(30, 220, 151, 161))
         self.ext_sata1_pwr_checked = QCheckBox(self.groupBox_5)
         self.ext_sata1_pwr_checked.setObjectName(u"ext_sata1_pwr_checked")
-        self.ext_sata1_pwr_checked.setGeometry(QRect(30, 80, 121, 19))
+        self.ext_sata1_pwr_checked.setGeometry(QRect(20, 80, 121, 19))
         self.ext_sata1_pwr_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
         self.ext_sata1_pwr_checked.setAutoExclusive(False)
         self.ext_sata2_pwr_checked = QCheckBox(self.groupBox_5)
         self.ext_sata2_pwr_checked.setObjectName(u"ext_sata2_pwr_checked")
-        self.ext_sata2_pwr_checked.setGeometry(QRect(30, 110, 121, 19))
+        self.ext_sata2_pwr_checked.setGeometry(QRect(20, 110, 121, 19))
         self.ext_sata2_pwr_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
         self.ext_sata2_pwr_checked.setAutoExclusive(False)
         self.ext_nvme_pwr_checked = QCheckBox(self.groupBox_5)
         self.ext_nvme_pwr_checked.setObjectName(u"ext_nvme_pwr_checked")
-        self.ext_nvme_pwr_checked.setGeometry(QRect(30, 50, 83, 19))
+        self.ext_nvme_pwr_checked.setGeometry(QRect(20, 50, 83, 19))
         self.ext_nvme_pwr_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
         self.ext_nvme_pwr_checked.setAutoExclusive(False)
         self.groupBox_2 = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox_2.setObjectName(u"groupBox_2")
-        self.groupBox_2.setGeometry(QRect(270, 70, 231, 171))
+        self.groupBox_2.setGeometry(QRect(270, 60, 231, 171))
         self.groupBox_2.setFont(font4)
         self.groupBox_2.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
@@ -382,7 +382,7 @@ class Ui_Dialog(object):
         self._1352_r0_checked.setAutoExclusive(True)
         self.groupBox_3 = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox_3.setObjectName(u"groupBox_3")
-        self.groupBox_3.setGeometry(QRect(270, 250, 231, 161))
+        self.groupBox_3.setGeometry(QRect(270, 240, 231, 171))
         self.groupBox_3.setFont(font4)
         self.groupBox_3.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
@@ -400,7 +400,7 @@ class Ui_Dialog(object):
 "}")
         self.hddpc_suspend_enable_checked = QCheckBox(self.groupBox_3)
         self.hddpc_suspend_enable_checked.setObjectName(u"hddpc_suspend_enable_checked")
-        self.hddpc_suspend_enable_checked.setGeometry(QRect(40, 40, 151, 31))
+        self.hddpc_suspend_enable_checked.setGeometry(QRect(40, 50, 151, 31))
         self.hddpc_suspend_enable_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
@@ -409,7 +409,7 @@ class Ui_Dialog(object):
         self.pd_mode_select_combobox.addItem("")
         self.pd_mode_select_combobox.addItem("")
         self.pd_mode_select_combobox.setObjectName(u"pd_mode_select_combobox")
-        self.pd_mode_select_combobox.setGeometry(QRect(40, 110, 151, 31))
+        self.pd_mode_select_combobox.setGeometry(QRect(40, 120, 151, 31))
         self.pd_mode_select_combobox.setStyleSheet(u"QComboBox {\n"
 "    padding: 4px 10px;\n"
 "}\n"
@@ -420,7 +420,7 @@ class Ui_Dialog(object):
 "}")
         self.label_2 = QLabel(self.groupBox_3)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(40, 90, 131, 16))
+        self.label_2.setGeometry(QRect(40, 100, 131, 16))
         self.enclosure_setting_apply = QPushButton(self.scrollAreaWidgetContents_2)
         self.enclosure_setting_apply.setObjectName(u"enclosure_setting_apply")
         self.enclosure_setting_apply.setGeometry(QRect(270, 430, 111, 41))
@@ -503,7 +503,10 @@ class Ui_Dialog(object):
         self.groupBox_9 = QGroupBox(self.scrollAreaWidgetContents)
         self.groupBox_9.setObjectName(u"groupBox_9")
         self.groupBox_9.setGeometry(QRect(40, 280, 461, 191))
-        self.groupBox_9.setFont(font4)
+        font5 = QFont()
+        font5.setFamilies([u"Segoe UI"])
+        font5.setPointSize(10)
+        self.groupBox_9.setFont(font5)
         self.groupBox_9.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
 "    border-radius: 8px;\n"
@@ -521,7 +524,7 @@ class Ui_Dialog(object):
         self.groupBox_11 = QGroupBox(self.groupBox_9)
         self.groupBox_11.setObjectName(u"groupBox_11")
         self.groupBox_11.setGeometry(QRect(130, 20, 91, 131))
-        self.groupBox_11.setFont(font4)
+        self.groupBox_11.setFont(font5)
         self.groupBox_11.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
 "    border-radius: 8px;\n"
@@ -554,7 +557,7 @@ class Ui_Dialog(object):
         self.groupBox_12 = QGroupBox(self.groupBox_9)
         self.groupBox_12.setObjectName(u"groupBox_12")
         self.groupBox_12.setGeometry(QRect(20, 20, 91, 131))
-        self.groupBox_12.setFont(font4)
+        self.groupBox_12.setFont(font5)
         self.groupBox_12.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
 "    border-radius: 8px;\n"
@@ -592,7 +595,7 @@ class Ui_Dialog(object):
         self.groupBox_13 = QGroupBox(self.groupBox_9)
         self.groupBox_13.setObjectName(u"groupBox_13")
         self.groupBox_13.setGeometry(QRect(240, 20, 91, 131))
-        self.groupBox_13.setFont(font4)
+        self.groupBox_13.setFont(font5)
         self.groupBox_13.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
 "    border-radius: 8px;\n"
@@ -625,7 +628,7 @@ class Ui_Dialog(object):
         self.groupBox_14 = QGroupBox(self.groupBox_9)
         self.groupBox_14.setObjectName(u"groupBox_14")
         self.groupBox_14.setGeometry(QRect(350, 20, 91, 131))
-        self.groupBox_14.setFont(font4)
+        self.groupBox_14.setFont(font5)
         self.groupBox_14.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
 "    border-radius: 8px;\n"
@@ -740,7 +743,7 @@ class Ui_Dialog(object):
         self.label_11.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
         self.groupBox_6 = QGroupBox(self.scrollAreaWidgetContents1)
         self.groupBox_6.setObjectName(u"groupBox_6")
-        self.groupBox_6.setGeometry(QRect(40, 290, 171, 181))
+        self.groupBox_6.setGeometry(QRect(40, 290, 211, 181))
         self.groupBox_6.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
 "    border-radius: 8px;\n"
@@ -757,13 +760,13 @@ class Ui_Dialog(object):
 "}")
         self.reset_only_btn = QPushButton(self.groupBox_6)
         self.reset_only_btn.setObjectName(u"reset_only_btn")
-        self.reset_only_btn.setGeometry(QRect(30, 30, 111, 41))
+        self.reset_only_btn.setGeometry(QRect(30, 30, 151, 41))
         self.reset_to_dfu_btn = QPushButton(self.groupBox_6)
         self.reset_to_dfu_btn.setObjectName(u"reset_to_dfu_btn")
-        self.reset_to_dfu_btn.setGeometry(QRect(30, 80, 111, 41))
+        self.reset_to_dfu_btn.setGeometry(QRect(30, 80, 151, 41))
         self.dfu_update_btn = QPushButton(self.groupBox_6)
         self.dfu_update_btn.setObjectName(u"dfu_update_btn")
-        self.dfu_update_btn.setGeometry(QRect(30, 130, 111, 41))
+        self.dfu_update_btn.setGeometry(QRect(30, 130, 151, 41))
         self.controller_setting_cancel = QPushButton(self.scrollAreaWidgetContents1)
         self.controller_setting_cancel.setObjectName(u"controller_setting_cancel")
         self.controller_setting_cancel.setGeometry(QRect(390, 430, 111, 41))
@@ -791,46 +794,57 @@ class Ui_Dialog(object):
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(300, 30, 2, 180))
         self.label.setStyleSheet(u"background-color: rgb(161, 161, 161);")
-        self.curve_mode_btn = QCheckBox(self.groupBox_7)
-        self.curve_mode_btn.setObjectName(u"curve_mode_btn")
-        self.curve_mode_btn.setGeometry(QRect(330, 90, 111, 19))
-        self.curve_mode_btn.setStyleSheet(u"QCheckBox {\n"
+        self.curve_mode_checked = QCheckBox(self.groupBox_7)
+        self.curve_mode_checked.setObjectName(u"curve_mode_checked")
+        self.curve_mode_checked.setGeometry(QRect(330, 90, 111, 19))
+        self.curve_mode_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
-        self.curve_mode_btn.setCheckable(True)
-        self.curve_mode_btn.setChecked(True)
-        self.curve_mode_btn.setAutoExclusive(True)
-        self.fixed_mode_btn = QCheckBox(self.groupBox_7)
-        self.fixed_mode_btn.setObjectName(u"fixed_mode_btn")
-        self.fixed_mode_btn.setGeometry(QRect(330, 130, 111, 19))
-        self.fixed_mode_btn.setStyleSheet(u"QCheckBox {\n"
+        self.curve_mode_checked.setCheckable(True)
+        self.curve_mode_checked.setChecked(True)
+        self.curve_mode_checked.setAutoExclusive(True)
+        self.fixed_mode_checked = QCheckBox(self.groupBox_7)
+        self.fixed_mode_checked.setObjectName(u"fixed_mode_checked")
+        self.fixed_mode_checked.setGeometry(QRect(330, 130, 111, 19))
+        self.fixed_mode_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
-        self.fixed_mode_btn.setCheckable(True)
-        self.fixed_mode_btn.setAutoExclusive(True)
-        self.fullon_mode_btn = QCheckBox(self.groupBox_7)
-        self.fullon_mode_btn.setObjectName(u"fullon_mode_btn")
-        self.fullon_mode_btn.setGeometry(QRect(330, 170, 111, 19))
-        self.fullon_mode_btn.setStyleSheet(u"QCheckBox {\n"
+        self.fixed_mode_checked.setCheckable(True)
+        self.fixed_mode_checked.setAutoExclusive(True)
+        self.fullon_mode_checked = QCheckBox(self.groupBox_7)
+        self.fullon_mode_checked.setObjectName(u"fullon_mode_checked")
+        self.fullon_mode_checked.setGeometry(QRect(330, 170, 111, 19))
+        self.fullon_mode_checked.setStyleSheet(u"QCheckBox {\n"
 "    background: transparent;\n"
 "}")
-        self.fullon_mode_btn.setCheckable(True)
-        self.fullon_mode_btn.setAutoExclusive(True)
+        self.fullon_mode_checked.setCheckable(True)
+        self.fullon_mode_checked.setAutoExclusive(True)
         self.label_14 = QLabel(self.groupBox_7)
         self.label_14.setObjectName(u"label_14")
         self.label_14.setGeometry(QRect(330, 50, 111, 21))
         self.FanSettingWidget = QStackedWidget(self.groupBox_7)
         self.FanSettingWidget.setObjectName(u"FanSettingWidget")
         self.FanSettingWidget.setGeometry(QRect(19, 30, 271, 181))
-        self.FanCurveSetting = FanCurveWidget()
-        self.FanCurveSetting.setObjectName(u"FanCurveSetting")
-        self.FanSettingWidget.addWidget(self.FanCurveSetting)
+        self.FanSettingWidget.setStyleSheet(u"#FanSettingWidget {\n"
+"    background-color: transparent;\n"
+"}\n"
+"\n"
+"#FanSettingWidget[disabledState=\"true\"] {\n"
+"    background-color: rgba(255, 255, 255, 200);\n"
+"}")
+        self.FanCurveWidget = FanCurveWidget()
+        self.FanCurveWidget.setObjectName(u"FanCurveWidget")
+        self.FanSettingWidget.addWidget(self.FanCurveWidget)
         self.FanNoCurveWidget = FanNoCurveWidget()
         self.FanNoCurveWidget.setObjectName(u"FanNoCurveWidget")
         self.FanSettingWidget.addWidget(self.FanNoCurveWidget)
+        self.FanSettingDisabledWidget = QWidget(self.groupBox_7)
+        self.FanSettingDisabledWidget.setObjectName(u"FanSettingDisabledWidget")
+        self.FanSettingDisabledWidget.setGeometry(QRect(19, 30, 271, 181))
+        self.FanSettingDisabledWidget.setStyleSheet(u"background-color: rgba(250, 250, 250, 180);")
         self.groupBox_8 = QGroupBox(self.scrollAreaWidgetContents1)
         self.groupBox_8.setObjectName(u"groupBox_8")
-        self.groupBox_8.setGeometry(QRect(230, 290, 271, 121))
+        self.groupBox_8.setGeometry(QRect(270, 290, 231, 121))
         self.groupBox_8.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid #E0E0E0;\n"
 "    border-radius: 8px;\n"
@@ -847,15 +861,15 @@ class Ui_Dialog(object):
 "}")
         self.label_18 = QLabel(self.groupBox_8)
         self.label_18.setObjectName(u"label_18")
-        self.label_18.setGeometry(QRect(60, 40, 161, 21))
+        self.label_18.setGeometry(QRect(35, 40, 161, 21))
         self.temp_setting_spinbox = QSpinBox(self.groupBox_8)
         self.temp_setting_spinbox.setObjectName(u"temp_setting_spinbox")
-        self.temp_setting_spinbox.setGeometry(QRect(90, 70, 70, 31))
+        self.temp_setting_spinbox.setGeometry(QRect(65, 70, 70, 31))
         self.temp_setting_spinbox.setMaximum(100)
         self.temp_setting_spinbox.setValue(40)
         self.temp_setting_show = QLabel(self.groupBox_8)
         self.temp_setting_show.setObjectName(u"temp_setting_show")
-        self.temp_setting_show.setGeometry(QRect(170, 70, 41, 31))
+        self.temp_setting_show.setGeometry(QRect(145, 70, 41, 31))
         self.scrollArea1.setWidget(self.scrollAreaWidgetContents1)
         self.oled_setting_interface = QWidget(self.mainFrame)
         self.oled_setting_interface.setObjectName(u"oled_setting_interface")
@@ -981,12 +995,6 @@ class Ui_Dialog(object):
         self.center_setting_apply = QPushButton(self.scrollAreaWidgetContents3)
         self.center_setting_apply.setObjectName(u"center_setting_apply")
         self.center_setting_apply.setGeometry(QRect(270, 430, 111, 41))
-        self.fahrenheit_celsius_switch_checked = QCheckBox(self.scrollAreaWidgetContents3)
-        self.fahrenheit_celsius_switch_checked.setObjectName(u"fahrenheit_celsius_switch_checked")
-        self.fahrenheit_celsius_switch_checked.setGeometry(QRect(60, 300, 381, 21))
-        self.fahrenheit_celsius_switch_checked.setStyleSheet(u"QCheckBox {\n"
-"    background: transparent;\n"
-"}")
         self.minimized_startup_checked_2 = QCheckBox(self.scrollAreaWidgetContents3)
         self.minimized_startup_checked_2.setObjectName(u"minimized_startup_checked_2")
         self.minimized_startup_checked_2.setGeometry(QRect(60, 260, 381, 21))
@@ -998,10 +1006,10 @@ class Ui_Dialog(object):
         self.topbar.raise_()
         self.about_interface.raise_()
         self.oled_setting_interface.raise_()
-        self.enclosure_setting_interface.raise_()
-        self.controller_setting_interface.raise_()
-        self.center_setting_interface.raise_()
         self.overview_interface.raise_()
+        self.center_setting_interface.raise_()
+        self.controller_setting_interface.raise_()
+        self.enclosure_setting_interface.raise_()
 
         self.retranslateUi(Dialog)
 
@@ -1120,9 +1128,9 @@ class Ui_Dialog(object):
         self.controller_setting_apply.setText(QCoreApplication.translate("Dialog", u"Apply", None))
         self.groupBox_7.setTitle(QCoreApplication.translate("Dialog", u"Fan Setting:", None))
         self.label.setText("")
-        self.curve_mode_btn.setText(QCoreApplication.translate("Dialog", u"Curve Mode", None))
-        self.fixed_mode_btn.setText(QCoreApplication.translate("Dialog", u"Fixed Mode", None))
-        self.fullon_mode_btn.setText(QCoreApplication.translate("Dialog", u"Full-on Mode", None))
+        self.curve_mode_checked.setText(QCoreApplication.translate("Dialog", u"Curve Mode", None))
+        self.fixed_mode_checked.setText(QCoreApplication.translate("Dialog", u"Fixed Mode", None))
+        self.fullon_mode_checked.setText(QCoreApplication.translate("Dialog", u"Full-on Mode", None))
         self.label_14.setText(QCoreApplication.translate("Dialog", u"Fan Mode Select:", None))
         self.groupBox_8.setTitle(QCoreApplication.translate("Dialog", u"RGB LED Setting:", None))
         self.label_18.setText(QCoreApplication.translate("Dialog", u"Temp. Warning Threshold:", None))
@@ -1137,7 +1145,6 @@ class Ui_Dialog(object):
         self.minimized_startup_checked.setText(QCoreApplication.translate("Dialog", u"Minimized the center after center startup", None))
         self.center_setting_cancel.setText(QCoreApplication.translate("Dialog", u"Cancel", None))
         self.center_setting_apply.setText(QCoreApplication.translate("Dialog", u"Apply", None))
-        self.fahrenheit_celsius_switch_checked.setText(QCoreApplication.translate("Dialog", u"Use Fahrenheit for temperature (Celsius by default)", None))
         self.minimized_startup_checked_2.setText(QCoreApplication.translate("Dialog", u"Exit the center after close the window", None))
     # retranslateUi
 

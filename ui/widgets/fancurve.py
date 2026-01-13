@@ -183,7 +183,7 @@ class FanNoCurveWidget(QWidget):
         painter.drawText(self.width() - self.margin + 5, origin.y() + 5, "°C")
 
         status_text = f"Fixed Fan Speed: "
-        painter.drawText(self.margin, self.margin - 10, status_text)
+        painter.drawText(self.margin, self.margin - 15, status_text)
 
         line_pen = QPen(QColor("#3498DB"), 3)
         painter.setPen(line_pen)

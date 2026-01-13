@@ -602,7 +602,7 @@ QPushButton:pressed {
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
+       <family>Microsoft YaHei UI</family>
       </font>
      </property>
      <property name="autoFillBackground">
@@ -692,16 +692,16 @@ QScrollArea QScrollBar::sub-page:vertical {
       <widget class="QGroupBox" name="groupBox">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>70</y>
-         <width>231</width>
-         <height>401</height>
+         <x>40</x>
+         <y>60</y>
+         <width>211</width>
+         <height>411</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <family>Segoe UI</family>
-         <pointsize>10</pointsize>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -728,7 +728,7 @@ QGroupBox::title {
          <rect>
           <x>30</x>
           <y>39</y>
-          <width>171</width>
+          <width>151</width>
           <height>161</height>
          </rect>
         </property>
@@ -738,7 +738,7 @@ QGroupBox::title {
         <widget class="QCheckBox" name="self_sata1_pwr_checked">
          <property name="geometry">
           <rect>
-           <x>30</x>
+           <x>20</x>
            <y>80</y>
            <width>121</width>
            <height>19</height>
@@ -759,7 +759,7 @@ QGroupBox::title {
         <widget class="QCheckBox" name="self_sata2_pwr_checked">
          <property name="geometry">
           <rect>
-           <x>30</x>
+           <x>20</x>
            <y>110</y>
            <width>121</width>
            <height>19</height>
@@ -780,7 +780,7 @@ QGroupBox::title {
         <widget class="QCheckBox" name="self_nvme_pwr_checked">
          <property name="geometry">
           <rect>
-           <x>30</x>
+           <x>20</x>
            <y>50</y>
            <width>83</width>
            <height>19</height>
@@ -804,7 +804,7 @@ QGroupBox::title {
          <rect>
           <x>30</x>
           <y>220</y>
-          <width>171</width>
+          <width>151</width>
           <height>161</height>
          </rect>
         </property>
@@ -814,7 +814,7 @@ QGroupBox::title {
         <widget class="QCheckBox" name="ext_sata1_pwr_checked">
          <property name="geometry">
           <rect>
-           <x>30</x>
+           <x>20</x>
            <y>80</y>
            <width>121</width>
            <height>19</height>
@@ -835,7 +835,7 @@ QGroupBox::title {
         <widget class="QCheckBox" name="ext_sata2_pwr_checked">
          <property name="geometry">
           <rect>
-           <x>30</x>
+           <x>20</x>
            <y>110</y>
            <width>121</width>
            <height>19</height>
@@ -856,7 +856,7 @@ QGroupBox::title {
         <widget class="QCheckBox" name="ext_nvme_pwr_checked">
          <property name="geometry">
           <rect>
-           <x>30</x>
+           <x>20</x>
            <y>50</y>
            <width>83</width>
            <height>19</height>
@@ -880,15 +880,15 @@ QGroupBox::title {
        <property name="geometry">
         <rect>
          <x>270</x>
-         <y>70</y>
+         <y>60</y>
          <width>231</width>
          <height>171</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <family>Segoe UI</family>
-         <pointsize>10</pointsize>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1005,15 +1005,15 @@ QGroupBox::title {
        <property name="geometry">
         <rect>
          <x>270</x>
-         <y>250</y>
+         <y>240</y>
          <width>231</width>
-         <height>161</height>
+         <height>171</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <family>Segoe UI</family>
-         <pointsize>10</pointsize>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1039,7 +1039,7 @@ QGroupBox::title {
         <property name="geometry">
          <rect>
           <x>40</x>
-          <y>40</y>
+          <y>50</y>
           <width>151</width>
           <height>31</height>
          </rect>
@@ -1061,7 +1061,7 @@ HDDPC signal</string>
         <property name="geometry">
          <rect>
           <x>40</x>
-          <y>110</y>
+          <y>120</y>
           <width>151</width>
           <height>31</height>
          </rect>
@@ -1097,7 +1097,7 @@ QComboBox QAbstractItemView {
         <property name="geometry">
          <rect>
           <x>40</x>
-          <y>90</y>
+          <y>100</y>
           <width>131</width>
           <height>16</height>
          </rect>
@@ -1982,7 +1982,7 @@ QScrollArea QScrollBar::sub-page:vertical {
         <rect>
          <x>40</x>
          <y>290</y>
-         <width>171</width>
+         <width>211</width>
          <height>181</height>
         </rect>
        </property>
@@ -2010,7 +2010,7 @@ QGroupBox::title {
          <rect>
           <x>30</x>
           <y>30</y>
-          <width>111</width>
+          <width>151</width>
           <height>41</height>
          </rect>
         </property>
@@ -2023,7 +2023,7 @@ QGroupBox::title {
          <rect>
           <x>30</x>
           <y>80</y>
-          <width>111</width>
+          <width>151</width>
           <height>41</height>
          </rect>
         </property>
@@ -2036,7 +2036,7 @@ QGroupBox::title {
          <rect>
           <x>30</x>
           <y>130</y>
-          <width>111</width>
+          <width>151</width>
           <height>41</height>
          </rect>
         </property>
@@ -2115,7 +2115,7 @@ QGroupBox::title {
          <string/>
         </property>
        </widget>
-       <widget class="QCheckBox" name="curve_mode_btn">
+       <widget class="QCheckBox" name="curve_mode_checked">
         <property name="geometry">
          <rect>
           <x>330</x>
@@ -2142,7 +2142,7 @@ QGroupBox::title {
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="fixed_mode_btn">
+       <widget class="QCheckBox" name="fixed_mode_checked">
         <property name="geometry">
          <rect>
           <x>330</x>
@@ -2166,7 +2166,7 @@ QGroupBox::title {
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="fullon_mode_btn">
+       <widget class="QCheckBox" name="fullon_mode_checked">
         <property name="geometry">
          <rect>
           <x>330</x>
@@ -2212,19 +2212,41 @@ QGroupBox::title {
           <height>181</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">#FanSettingWidget {
+    background-color: transparent;
+}
+
+#FanSettingWidget[disabledState=&quot;true&quot;] {
+    background-color: rgba(255, 255, 255, 200);
+}</string>
+        </property>
         <property name="currentIndex">
          <number>0</number>
         </property>
-        <widget class="FanCurveWidget" name="FanCurveSetting"/>
+        <widget class="FanCurveWidget" name="FanCurveWidget"/>
         <widget class="FanNoCurveWidget" name="FanNoCurveWidget"/>
+       </widget>
+       <widget class="QWidget" name="FanSettingDisabledWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>19</x>
+          <y>30</y>
+          <width>271</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(250, 250, 250, 180);</string>
+        </property>
        </widget>
       </widget>
       <widget class="QGroupBox" name="groupBox_8">
        <property name="geometry">
         <rect>
-         <x>230</x>
+         <x>270</x>
          <y>290</y>
-         <width>271</width>
+         <width>231</width>
          <height>121</height>
         </rect>
        </property>
@@ -2250,7 +2272,7 @@ QGroupBox::title {
        <widget class="QLabel" name="label_18">
         <property name="geometry">
          <rect>
-          <x>60</x>
+          <x>35</x>
           <y>40</y>
           <width>161</width>
           <height>21</height>
@@ -2263,7 +2285,7 @@ QGroupBox::title {
        <widget class="QSpinBox" name="temp_setting_spinbox">
         <property name="geometry">
          <rect>
-          <x>90</x>
+          <x>65</x>
           <y>70</y>
           <width>70</width>
           <height>31</height>
@@ -2279,7 +2301,7 @@ QGroupBox::title {
        <widget class="QLabel" name="temp_setting_show">
         <property name="geometry">
          <rect>
-          <x>170</x>
+          <x>145</x>
           <y>70</y>
           <width>41</width>
           <height>31</height>
@@ -2608,24 +2630,6 @@ QScrollArea QScrollBar::sub-page:vertical {
         <string>Apply</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="fahrenheit_celsius_switch_checked">
-       <property name="geometry">
-        <rect>
-         <x>60</x>
-         <y>300</y>
-         <width>381</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QCheckBox {
-    background: transparent;
-}</string>
-       </property>
-       <property name="text">
-        <string>Use Fahrenheit for temperature (Celsius by default)</string>
-       </property>
-      </widget>
       <widget class="QCheckBox" name="minimized_startup_checked_2">
        <property name="geometry">
         <rect>
@@ -2651,10 +2655,10 @@ QScrollArea QScrollBar::sub-page:vertical {
    <zorder>topbar</zorder>
    <zorder>about_interface</zorder>
    <zorder>oled_setting_interface</zorder>
-   <zorder>enclosure_setting_interface</zorder>
-   <zorder>controller_setting_interface</zorder>
-   <zorder>center_setting_interface</zorder>
    <zorder>overview_interface</zorder>
+   <zorder>center_setting_interface</zorder>
+   <zorder>controller_setting_interface</zorder>
+   <zorder>enclosure_setting_interface</zorder>
   </widget>
  </widget>
  <customwidgets>
